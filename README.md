@@ -1,3 +1,4 @@
 # nkrtyan-QWALLITY-AGBU-E2E23
 
-I love extreme activities and trying things that give me an adrenaline rush. I enjoy stepping outside my comfort zone and experiencing new challenges.
+I have previous experience working at Coca-Cola HBC Armenia as a Master Data Specialist. I worked with data across different departments of an international company and communicated with colleagues and partners from other countries. I really enjoyed working with data, checking its accuracy, understanding how different departments work, and seeing how different processes are connected across the organization. My interest in working with data and making sure everything is accurate and works correctly is what led me to QA and software testing. That’s why I decided to develop my career in this field.
+One interesting fact about me is that I love extreme activities and experiences that give me an adrenaline rush.
