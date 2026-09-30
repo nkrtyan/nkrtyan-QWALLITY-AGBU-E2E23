@@ -1,3 +1,2 @@
 line 11
-line 22
 line 33
