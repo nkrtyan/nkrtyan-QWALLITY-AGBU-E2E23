@@ -6,4 +6,3 @@ Eventually, those communication skills opened the door to the IT corporate world
 What I value most about my career is that I’ve never really left any of my professions behind. I genuinely love each of them, and wherever my focus takes me next, I carry all of those experiences with me. Translation taught me precision, communications taught me how to connect with people, and IT taught me how to bring those skills into a fast-moving, technology-driven environment. Together, they’ve shaped who I am today.
 
 And if I ever get the chance to ignore modern trends, close my laptop for good, and choose a completely different life, you’ll probably find me restoring paintings and happily spending my days surrounded by canvases instead of screens))))
-jjj
