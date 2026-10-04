@@ -1,6 +1,4 @@
 # nkrtyan-QWALLITY-AGBU-E2E23
-opaaa
-new change
 I started my career as a translator, which naturally led me into PR and communications. For about 10 years, these two professions went hand in hand, shaping my career across both academic and humanitarian sectors and teaching me that words, people, and context can be just as important as any technical skill.
 
 Eventually, those communication skills opened the door to the IT corporate world. Today, I work at PARtech, a US-based company, where I’ve been a Member Support Team Lead for the past three years.
