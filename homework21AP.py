@@ -2,4 +2,4 @@
 #print("hello Armin")
 name = input("Input your name:")
 age = int(input("Input your age:"))
-print(f"My name is {name}, I'm {age} years old.")
+print(f"My name is {name}, I'm {age} years old.") 
