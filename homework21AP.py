@@ -1,5 +1,4 @@
-#print("hello word")
-#print("hello Armin")
-name = input("Input your name:")
 age = int(input("Input your age:"))
-print(f"My name is {name}, I'm {age} years old.") 
+decades = age//10
+unit = age%10
+print(f"In your {age} age there is {decades} decates and {unit} years") 
