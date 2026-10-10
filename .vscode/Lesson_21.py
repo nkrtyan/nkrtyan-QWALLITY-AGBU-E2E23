@@ -1,5 +1,7 @@
-age = input ("How old are you? \n ")
-age = int(age)
+age = int(input("How old are you? \n"))
 decade = age // 10
 year = age % 10
-print (f"You are {decade} decades and {year} years old.")
+if year == 0:
+    print(f"You are {decade} decades old")
+else:
+    print(f"You are {decade} decades and {year} years old")
