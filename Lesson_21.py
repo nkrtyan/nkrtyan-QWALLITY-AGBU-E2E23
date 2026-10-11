@@ -9,5 +9,6 @@ else:
         print(f"You are {decade} decades old")
     else:
         print(f"You are {decade} decades and {year} years old")
+        
 # fixed, add also case when user input not number
 # Nel, working code
