@@ -6,3 +6,5 @@ decades = age // 10
 units = age % 10
 
 print(f"Hi {greeting_name}. My name is {name}, and I'm {age} years old. My age consists of {decades} decades and {units} units.")
+
+# Nel, working code, very  accurate:)
