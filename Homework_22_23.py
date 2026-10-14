@@ -28,4 +28,4 @@ for i in numbers:
 
 print(f"Maximum number from the list: {max_num}")
 print(f"Minimum number from the list: {min_num}")
-print(f"The numbers are arranged in ascending order {numbers}")
+print(f"The numbers are arranged in ascending order {numbers}") 
