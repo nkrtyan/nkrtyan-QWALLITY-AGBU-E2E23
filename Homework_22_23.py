@@ -25,7 +25,6 @@ for i in numbers:
             new_list = numbers[j]
             numbers[j] = numbers[j + 1]
             numbers[j + 1] = new_list
-
 print(f"Maximum number from the list: {max_num}")
 print(f"Minimum number from the list: {min_num}")
 print(f"The numbers are arranged in ascending order {numbers}") 
