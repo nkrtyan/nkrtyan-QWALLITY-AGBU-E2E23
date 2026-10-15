@@ -1,0 +1,76 @@
+""" 
+Version1.0
+value1 = "abc"
+value2 = "xyz"
+newValue = value2[0:2]+ value1[2]+ " " + value1[0:2]+ value2[2]
+print(f"We have 2 variables: {value1} and {value2}. As a result we see: {newValue}")
+
+Version with replace
+x = "abc"
+y = "xyz"
+single_string = x + " " + y
+print(single_string)
+new_single_string = single_string.replace("abc xyz", "xyc abz")
+print(new_single_string)
+print(f"We have 2 variables: {x}, {y} \n As a result we see: {new_single_string}")
+
+"""
+"""
+my_list = [1,8,5,7]
+max = my_list [0]
+for item in my_list: 
+    if my_list[item] > my_list[item+1]:
+        max = my_list[item]
+    else:     
+
+"""
+"""
+value1 = "abc"
+value2 = "xyz"
+newValue = value2[0:2]+ value1[2]+ " " + value1[0:2]+ value2[2]
+print(f"We have 2 variables: {value1} and {value2}. As a result we see: {newValue}")
+
+"""
+"""
+my_list = [1, 8, 5, 7]
+max = my_list[0]
+for item in my_list[1:]:
+    if item > max:
+        max = item 
+print(max)
+
+
+my_list = [1, 7 , 10, 3, 9, 16]
+min = my_list[0]
+for item in my_list[1:]:
+    if item < min:
+        min = item
+print(min)
+
+"""
+# Lesson_22: Python Collections-> List, Tuple
+# Create python script  which will implement min and sort method algorithm.
+# Do not use ready max(), min(),  sort() functions
+
+
+"""
+my_list = [1, 7 , 10, 3, 9, 16]
+my_new_list = []
+
+for item in my_list[:]:
+    min_value = my_list[0]
+
+    for i in my_list:
+        if i < min_value:
+            min_value = i
+    my_new_list.append(min_value)
+    my_list.remove(min_value) 
+
+print(f"Sorted list is {my_new_list}")     
+
+"""
+
+
+   
+
+    
