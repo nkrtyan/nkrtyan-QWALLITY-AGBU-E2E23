@@ -1,7 +1,6 @@
-name = input("Input your name: ")
-age = int(input("Input your age: "))
-
-decades = age // 10
-units = age % 10
-
-print(f"Hi {name}. My name is {name}, and I'm {age} years old. My age consists of {decades} decades and {units} units.")
+my_list = input("Input a list of numbers separated by spaces: ").split()
+min_value = my_list[0]
+for value in my_list:
+    if value < min_value:
+        min_value = value
+print(min_value) #I know sth is mising, but I got lost. Sorting should have been included here.
