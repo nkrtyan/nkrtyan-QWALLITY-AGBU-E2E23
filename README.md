@@ -1,5 +1,4 @@
 # nkrtyan-QWALLITY-AGBU-E2E23
 opaaa
-new change
-
-
+new c
+Meri - junior QA, worked as a translator
