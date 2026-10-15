@@ -1,0 +1,4 @@
+empty = []
+print(empty)
+my_list = [1, 2, "word", 4, "word2"]
+print (my_list [2])
