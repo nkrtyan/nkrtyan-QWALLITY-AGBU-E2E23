@@ -53,7 +53,6 @@ print(min)
 # Do not use ready max(), min(),  sort() functions
 
 
-"""
 my_list = [1, 7 , 10, 3, 9, 16]
 my_new_list = []
 
@@ -68,7 +67,6 @@ for item in my_list[:]:
 
 print(f"Sorted list is {my_new_list}")     
 
-"""
 
 
    
