@@ -27,7 +27,7 @@ print(min_1)
 
 list=[4,2,7,9,1]
 sorted_list=[]
-for item in range(len(list)):
+for i in range(len(list)):
     min_value = list[0]
     for item in list:
         if item < min_value:
