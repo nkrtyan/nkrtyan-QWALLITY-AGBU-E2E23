@@ -1,7 +1,6 @@
 #1 Write a Python program to remove duplicates from a list(write logic of the set, do not use set)
 # mylist = [2, 4, 2, 10, 5, 4, 8, 3, 5]
 # newlist = []
-
 # for i in mylist:
 #     if i not in newlist:
 #         newlist.append(i)
