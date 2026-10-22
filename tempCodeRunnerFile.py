@@ -1,7 +1,3 @@
-classmates_info = [
-    ("Arevik", "Hakobyan"),
-    ("Ani", "Nahapetyan"),
-    ("Narek", "Sargsyan")
-]
-
-print(classmates_info)
+my_tuple = (("name", "Arevik"), ("surname", "Hakobyan"), ("age", 25))
+my_dict = dict(my_tuple)
+print(my_dict)

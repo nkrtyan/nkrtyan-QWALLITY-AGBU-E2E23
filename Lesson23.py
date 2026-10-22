@@ -69,3 +69,51 @@ classmates_info = [
 ]
 
 print(classmates_info)
+
+#1 Write a Python program to remove duplicates from a list(write logic of the set, do not use set.
+num = [11, 21, 31, 11, 22, 23, 21, 33]
+unique_num = []
+for num in num:
+    if num not in unique_num:
+        unique_num.append(num)
+print(unique_num)
+
+fruits = ["Apple", "Orange", "Pear", "Orange", "Peach", "Grapes", "Apple"]
+unique_fruits = []
+for fruits in fruits:
+    if fruits not in unique_fruits:
+        unique_fruits.append(fruits)
+print(unique_fruits)
+
+#2 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.  
+numbers = [11, 12, 13, 14, 15, 16, 17, 18]
+numbers.pop(5)
+numbers.pop(4)
+numbers.pop(0)
+print(numbers)
+
+numbers = [11, 12, 13, 14, 15, 16, 17, 18]
+del numbers[5]
+del numbers[4]
+del numbers[0]
+print(numbers)
+
+fruits = ["Apple", "Orange", "Pear", "Peach", "Grapes", "Mango", "Banana"]
+fruits.pop(5)
+fruits.pop(4)
+fruits.pop(0)
+print(fruits)
+
+#3 Write a Python program to get the difference between the two lists.
+list1 = [11, 12, 13, 14, 15, 16]
+list2 = [9, 10, 13, 17, 18, 19]
+difference = []
+for number in list2:
+    if number not in list1:
+        difference.append(number)
+print(difference)
+
+#4 Write a Python program to convert a tuple to a dictionary.
+my_tuple = (("name", "Arevik"), ("surname", "Hakobyan"), ("age", 25))
+my_dict = dict(my_tuple)
+print(my_dict)
