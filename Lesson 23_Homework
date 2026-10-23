@@ -44,18 +44,9 @@ print(new_list)
 list_1 = ['Freedom', 2, 8, -7, 100, 1000, 'work']
 list_2 = ['Ordinary', 1000, 'Work']
 
-difference = []
+difference = set(list_1).difference(set(list_2))
 
-for item in list_1:
-    if item not in list_2:
-        difference.append(item)
-
-
-for item in list_2:
-    if item not in list_1:
-        difference.append(item)
-
-print(difference)      
+print(difference)    
 
 """
 """
