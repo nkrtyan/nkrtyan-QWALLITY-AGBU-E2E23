@@ -1,5 +1,10 @@
 # nkrtyan-QWALLITY-AGBU-E2E23
-opaaa
-new change
+About Me
 
-
+My name is Armine, and I am an aspiring QA Automation Engineer with a background in Informatics and a strong interest in software quality and problem-solving.
+I attended TUMO Dilijan for more than three years, which played an important role in helping me explore different fields and understand my professional interests. Alongside technology, I studied piano for seven years, which helped me develop a good sense of music, pay attention to details, and better understand musical and vocal qualities.
+Because I have always enjoyed learning new things and, just as importantly, sharing my knowledge and helping others, especially my classmates :D I chose to study Informatics at the Armenian State Pedagogical University named after Khachatur Abovyan. I successfully completed both my Bachelor’s and Master’s degrees with honors.
+During my studies, I explored different programming languages and technologies, with Java being one of the areas I worked with most extensively. As part of my Master’s thesis, I developed an Android application using Java and Android technologies. During programming projects, we also worked with unit tests and regularly tested and verified the problems and code we wrote ourselves.
+Over time, I realized that I particularly enjoyed the part of development that involved finding problems, checking whether something works as expected, paying attention to details, and thinking about different possible scenarios. Since I am naturally detail-oriented and enjoy analyzing how things work, this led me to explore Software Quality Assurance more seriously.
+I have completed training in Manual QA and am now continuing my journey toward QA Automation with Python. I am excited to strengthen my technical skills, learn from real projects, and grow into a QA professional who not only finds bugs, but also understands the product and contributes to its overall quality.
+I’m happy to be starting this new stage of my learning journey and looking forward to learning, building, and growing together with the team.
