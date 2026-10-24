@@ -1,43 +1,11 @@
+mylist = [5, 2, 8, 1, 3]
 
-mylist = [1,3,5,6,4]
-newlist = []
+for i in range(len(mylist)):
+    for j in range(len(mylist) - 1):
+        if mylist[j] > mylist[j + 1]:
+            temp = mylist[j]
+            mylist[j] = mylist[j + 1]
+            mylist[j + 1] = temp
 
-num = mylist[0]
-for i in mylist[1:]:
-    if i < num:
-        num = i
-newlist.append(num)
-mylist.remove(num)
-
-# num = mylist[0]
-# for i in mylist[1:]:
-#     if i < num:
-#         num = i
-# newlist.append(num)
-# mylist.remove(num)
-
-# num = mylist[0]
-# for i in mylist[1:]:
-#     if i < num:
-#         num = i
-# newlist.append(num)
-# mylist.remove(num)
-
-# num = mylist[0]
-# for i in mylist[1:]:
-#     if i < num:
-#         num = i
-# newlist.append(num)
-# mylist.remove(num)
-
-# num = mylist[0]
-# for i in mylist[1:]:
-#     if i < num:
-#         num = i
-# newlist.append(num)
-# mylist.remove(num)
-
-newlist.append(mylist[0])
-
-print(newlist)
+print(mylist)
 
