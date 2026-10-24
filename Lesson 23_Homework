@@ -1,116 +1,103 @@
 
-# During program creation create your own list, tuple, dict, set.
+# # During program creation create your own list, tuple, dict, set.
 
-#1 Write a Python program to remove duplicates from a list(write logic of the set, do not use set)
-"""
+# #1 Write a Python program to remove duplicates from a list(write logic of the set, do not use set)
 
-my_list = [1, 5, 8, 1, 10, -2, 10, 8, 4]
-without_duplicates = []
 
-for item in my_list:
-    if item not in without_duplicates:
-        without_duplicates.append(item)
+# my_list = [1, 5, 8, 1, 10, -2, 10, 8, 4]
+# without_duplicates = []
 
-print(without_duplicates)    
+# for item in my_list:
+#     if item not in without_duplicates:
+#         without_duplicates.append(item)
 
-"""
+# print(without_duplicates)    
+
 
     
-#2 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
-"""
+# #2 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
 
-the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
+# the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
 
-the_list.pop(5)
-the_list.pop(4)
-the_list.pop(0)
+# the_list.pop(5)
+# the_list.pop(4)
+# the_list.pop(0)
 
-print(the_list)
-
-
-the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
-new_list = []
-
-for i in range(len(the_list)):
-    if i not in [0, 4, 5]:
-        new_list.append(the_list[i])
-print(new_list)        
-
-"""
-
-#3 Write a Python program to get the difference between the two lists.
-"""
-
-list_1 = ['Freedom', 2, 8, -7, 100, 1000, 'work']
-list_2 = ['Ordinary', 1000, 'Work']
-
-difference = set(list_1).difference(set(list_2))
-
-print(difference)    
-
-"""
-"""
-#4 Write a Python program to convert a tuple to a dictionary.
-
-my_tuple = (9, 10, "Anna", 11)
-
-my_dict = dict([(10, 9), (11, 'Anna')])
-
-print(my_dict)
+# print(the_list)
 
 
-"""
-"""
-#5 Write a Python program to add an item in a tuple.
+# the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
+# new_list = []
 
-my_tuple = (40, 50 ,19, 57.8)
-
-my_tuple = my_tuple + (30,)
-print(my_tuple)
-
-"""
-"""
-#6 Write a Python program to add a key with value to a dictionary.
-
-my_dict = {"name": 'Anna', "age": 8}
-
-my_dict['gender'] = 'woman'
-print(my_dict)
-
-"""
-"""
-#7 Write a Python program to get the maximum and minimum value in a dictionary().
-
-dict1 = {1: 10, 2: -2, 3: 8, 4: 7, 5: 9, 6: 0}
-
-print("Maximum value is", max(dict1.values()))
-print("Minimum value is", min(dict1.values()))
+# for i in range(len(the_list)):
+#     if i not in [0, 4, 5]:
+#         new_list.append(the_list[i])
+# print(new_list)        
 
 
-"""
-"""
-#8 Write a Python program to create a union of sets.
+# #3 Write a Python program to get the difference between the two lists.
 
-set1 = {'hey', 1 , 8, 'hi'}
-set2 = {1, 9, 11, 'key'}
 
-# union = set1.union(set2)
-union = set1 | set2
+# list_1 = ['Freedom', 2, 8, -7, 100, 1000, 'work']
+# list_2 = ['Ordinary', 1000, 'Work']
 
-print(union)
-"""
+# difference = list(set(list_1).difference(set(list_2)))
 
-"""
-#9 Student  Information
+# print(difference)    
 
-my_dictionary = {'name': 'Lilit', 'age': 21, 'address': 'New York city', 'education': 'high', 'phone_numbers': [888, 777]}
 
-print(my_dictionary)
-print(my_dictionary.get('name')
-print(my_dictionary['phone_numbers'])
+# #4 Write a Python program to convert a tuple to a dictionary.
 
-my_dictionary['email'] = 'hotspot@gmail.com'
+# my_tuple = (9, 10, "Anna", 11)
 
-print(my_dictionary)
+# my_dict = dict([(10, 9), (11, 'Anna')])
 
-"""
+# print(my_dict)
+
+
+# #5 Write a Python program to add an item in a tuple.
+
+# my_tuple = (40, 50 ,19, 57.8)
+
+# my_tuple = my_tuple + (30,)
+# print(my_tuple)
+
+# #6 Write a Python program to add a key with value to a dictionary.
+
+# my_dict = {"name": 'Anna', "age": 8}
+
+# my_dict['gender'] = 'woman'
+# print(my_dict)
+
+
+# #7 Write a Python program to get the maximum and minimum value in a dictionary().
+
+# dict1 = {1: 10, 2: -2, 3: 8, 4: 7, 5: 9, 6: 0}
+
+# print("Maximum value is", max(dict1.values()))
+# print("Minimum value is", min(dict1.values()))
+
+
+# #8 Write a Python program to create a union of sets.
+
+# set1 = {'hey', 1 , 8, 'hi'}
+# set2 = {1, 9, 11, 'key'}
+
+# # union = set1.union(set2)
+# union = set1 | set2
+
+# print(union)
+
+# #9 Student  Information
+
+# my_dictionary = {'name': 'Lilit', 'age': 21, 'address': 'New York city', 'education': 'high', 'phone_numbers': [888, 777]}
+
+# print(my_dictionary)
+# print(my_dictionary.get('name')
+# print(my_dictionary['phone_numbers'])
+
+# my_dictionary['email'] = 'hotspot@gmail.com'
+
+# print(my_dictionary)
+
+

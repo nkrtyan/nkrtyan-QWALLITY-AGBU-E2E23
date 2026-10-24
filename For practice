@@ -1,71 +1,104 @@
-""" 
-Version1.0
-value1 = "abc"
-value2 = "xyz"
-newValue = value2[0:2]+ value1[2]+ " " + value1[0:2]+ value2[2]
-print(f"We have 2 variables: {value1} and {value2}. As a result we see: {newValue}")
 
-Version with replace
-x = "abc"
-y = "xyz"
-single_string = x + " " + y
-print(single_string)
-new_single_string = single_string.replace("abc xyz", "xyc abz")
-print(new_single_string)
-print(f"We have 2 variables: {x}, {y} \n As a result we see: {new_single_string}")
+# Version1.0
+# value1 = "abc"
+# value2 = "xyz"
+# newValue = value2[0:2]+ value1[2]+ " " + value1[0:2]+ value2[2]
+# print(f"We have 2 variables: {value1} and {value2}. As a result we see: {newValue}")
 
-"""
-"""
-my_list = [1,8,5,7]
-max = my_list [0]
-for item in my_list: 
-    if my_list[item] > my_list[item+1]:
-        max = my_list[item]
-    else:     
-
-"""
-"""
-value1 = "abc"
-value2 = "xyz"
-newValue = value2[0:2]+ value1[2]+ " " + value1[0:2]+ value2[2]
-print(f"We have 2 variables: {value1} and {value2}. As a result we see: {newValue}")
-
-"""
-"""
-my_list = [1, 8, 5, 7]
-max = my_list[0]
-for item in my_list[1:]:
-    if item > max:
-        max = item 
-print(max)
+# Version with replace
+# x = "abc"
+# y = "xyz"
+# single_string = x + " " + y
+# print(single_string)
+# new_single_string = single_string.replace("abc xyz", "xyc abz")
+# print(new_single_string)
+# print(f"We have 2 variables: {x}, {y} \n As a result we see: {new_single_string}")    
 
 
-my_list = [1, 7 , 10, 3, 9, 16]
-min = my_list[0]
-for item in my_list[1:]:
-    if item < min:
-        min = item
-print(min)
-
-"""
-# Lesson_22: Python Collections-> List, Tuple
-# Create python script  which will implement min and sort method algorithm.
-# Do not use ready max(), min(),  sort() functions
+# value1 = "abc"
+# value2 = "xyz"
+# newValue = value2[0:2]+ value1[2]+ " " + value1[0:2]+ value2[2]
+# print(f"We have 2 variables: {value1} and {value2}. As a result we see: {newValue}")
 
 
-my_list = [1, 7 , 10, 3, 9, 16]
-my_new_list = []
+# my_list = [1, 8, 5, 7]
+# max = my_list[0]
+# for item in my_list[1:]:
+#     if item > max:
+#         max = item 
+# print(max)
 
-for item in my_list[:]:
-    min_value = my_list[0]
 
-    for i in my_list:
-        if i < min_value:
-            min_value = i
-    my_new_list.append(min_value)
-    my_list.remove(min_value) 
+# my_list = [1, 7 , 10, 3, 9, 16]
+# min = my_list[0]
+# for item in my_list[1:]:
+#     if item < min:
+#         min = item
+# print(min)
 
-print(f"Sorted list is {my_new_list}")     
+# # Write a program which will join two tuple and will print reversed joined tuple
+# tuple1 = (1, 2, 3)
+# tuple2 = (4, 5, 6)
+
+# join = (1, 2, 3) + (4, 5, 6,)
+# print(join)
+# print(join[::-1])
+
+
+# # Create a list of your favorite fruits. Print the third fruit in the list, add existing fruit to the list, then print list without duplicates.
+
+# f = ["Apple", "Banana", "Cherry", "Mango", "Grapes"]
+# print(f[2])   
+# f.append("Apple")
+# f.insert(1, 'Apple')
+# unique_f = list(set(f))
+# print(unique_f)  
+
+
+# # Create a dictionary to store information about a person (e.g., name, surname). Print each person info.
+# # dict = """ [
+# #     {'name': 'Alice', 'surname': 'Smith'},
+# #     {'name': 'Al', 'surname': 'Sm'},
+# #     {'name': 'An', 'surname': 'So'},
+# #     ] """
+
+# # print(dict)
+
+# a, *b = 100, 200, 300
+# print(a,b)
+# print(type(b))
+
+# Create a Python program that maintains a list of integers,
+# prompts the user to enter a number from the keyboard, and performs the following checks:
+
+# Pre-defined list of integers
+# number_list = [ 10, 23, 45, 67, 88, 92]
+
+# # Prompting the user to enter a number
+# entered_number = int(input("Please enter a number: "))
+
+# # Check if the number exists in the list
+# if entered_number in number_list:
+#     print(f"The number {entered_number} exists in a list")
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
 
 
 

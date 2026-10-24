@@ -1,0 +1,10 @@
+sample_data = 'Python 3.13'
+letters = 0
+digits = 0
+
+while i < len(sample_data):
+        if sample_data.isalpha():
+                letters = letters + 1
+        if sample_data.isdigit():   
+                  digits = digits + 1
+Print(f"Letters: {letters} \n Digits:  {digits}")

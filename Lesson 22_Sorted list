@@ -1,35 +1,33 @@
-"""
-my_list = [1, 8, 5, 7]
-max = my_list[0]
-for item in my_list[1:]:
-    if item > max:
-        max = item 
-print(max)
+
+# my_list = [1, 8, 5, 7]
+# max = my_list[0]
+# for item in my_list[1:]:
+#     if item > max:
+#         max = item 
+# print(max)
 
 
-my_list = [1, 7 , 10, 3, 9, 16]
-min = my_list[0]
-for item in my_list[1:]:
-    if item < min:
-        min = item
-print(min)
+# my_list = [1, 7 , 10, 3, 9, 16]
+# min = my_list[0]
+# for item in my_list[1:]:
+#     if item < min:
+#         min = item
+# print(min)
 
-"""
 # Lesson_22: Python Collections-> List, Tuple
 # Create python script  which will implement min and sort method algorithm.
 # Do not use ready max(), min(),  sort() functions
 
 
-my_list = [1, 7 , 10, 3, 9, 16]
-my_new_list = []
+my_list = [1, 5, 8, -2, 10]
+new_list = []
 
-for item in my_list[:]:
+for i in range(len(my_list)):
     min_value = my_list[0]
+    for item in my_list:
+        if item < min_value:
+            min_value = item
+    new_list.append(min_value)
+    my_list.remove(min_value)        
 
-    for i in my_list:
-        if i < min_value:
-            min_value = i
-    my_new_list.append(min_value)
-    my_list.remove(min_value) 
-
-print(f"Sorted list is {my_new_list}")  
+print(new_list)
