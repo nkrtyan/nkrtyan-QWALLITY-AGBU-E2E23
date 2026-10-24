@@ -16,20 +16,20 @@ array2 = list(map(int, input("Enter list of numbers: ").split()))
 ## version1
 new_array2 = []
 for j in range(len(array2)):
-    if j != 0 and j != 4 and j != 5:
+    if j != 5 and j != 4 and j != 0:
         new_array2.append(array2[j])
 
 print(f"New list after removing 0th, 4th and 5th elements: {new_array2}")
 
 ## version2
-index_array = [0, 4, 5]
+index_array = [5, 4, 0]
 for index in sorted(index_array, reverse = True):
     del array2[index]
 print(f"New list after removing 0th, 4th and 5th elements: {array2}")
 
 #3 Write a Python program to get the difference between the two lists.
 
-print(f"The difference between the two lists:  {list(set(array1) ^ set(array2))}\n")
+print(f"The difference between two lists:  {list(set(array1) ^ set(array2))}\n")
 
 #4 Write a Python program to convert a tuple to a dictionary.
 
