@@ -19,15 +19,45 @@
 # Do not use ready max(), min(),  sort() functions
 
 
-my_list = [1, 5, 8, -2, 10]
-new_list = []
+# my_list = [1, 5, 8, -2, 10]
+# new_list = []
 
-for i in range(len(my_list)):
-    min_value = my_list[0]
-    for item in my_list:
-        if item < min_value:
-            min_value = item
-    new_list.append(min_value)
-    my_list.remove(min_value)        
+# for i in range(len(my_list)):
+#     min_value = my_list[0]
+#     for item in my_list:
+#         if item < min_value:
+#             min_value = item
+#     new_list.append(min_value)
+#     my_list.remove(min_value)        
 
-print(new_list)
+# print(new_list)
+
+# my_list = [2, -4, 11, 8, 5]
+# new_list = []
+
+# for i in range(len(my_list)):
+#     min_value = my_list[0]
+#     for item in my_list:
+#         if item < min_value:
+#             min_value = item
+#     new_list.append(min_value)
+#     my_list.remove(min_value)
+
+# # print(new_list)  
+# # 
+# list = [3, 8, -1, 6]   
+# nl = []
+
+# for i in range(len(list)):
+#     min_value = list[0]
+#     for item in list[1:]:
+#         if item < min_value:
+#             min_value = item
+#     nl.append(min_value)
+#     list.remove(min_value)  
+
+# print(nl)          
+
+
+
+

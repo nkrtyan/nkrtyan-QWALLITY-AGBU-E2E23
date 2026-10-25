@@ -81,6 +81,24 @@
 # if entered_number in number_list:
 #     print(f"The number {entered_number} exists in a list")
 
+# # Write a Python program to get the Fibonacci series between 0 to 50. 
+
+a = 0
+b = 1
+next_number = 0
+Fib_list = []
+
+for i in range(0,50):
+    if a > 50:
+        break
+    Fib_list.append(a)
+    next_number = a + b
+    a = b
+    b = next_number
+
+print(Fib_list)
+   
+
 
 
 

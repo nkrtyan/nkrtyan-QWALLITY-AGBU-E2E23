@@ -1,5 +1,5 @@
 
-# # During program creation create your own list, tuple, dict, set.
+# During program creation create your own list, tuple, dict, set.
 
 # #1 Write a Python program to remove duplicates from a list(write logic of the set, do not use set)
 
@@ -15,7 +15,7 @@
 
 
     
-# #2 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
+#2 Write a Python program which print a specified list after removing the 0th, 4th and 5th elements.
 
 # the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
 
@@ -25,15 +25,24 @@
 
 # print(the_list)
 
-
+# Option 2
 # the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
 # new_list = []
 
 # for i in range(len(the_list)):
 #     if i not in [0, 4, 5]:
 #         new_list.append(the_list[i])
-# print(new_list)        
+# print(new_list)    
 
+# Option 1
+# the_list = ['Sun', 2, 'Moon', 100, 77, 1, -3]
+# removed_indexes = [5, 4, 0]
+
+# for i in removed_indexes:
+#     del the_list[i]
+
+# print(the_list)    
+  
 
 # #3 Write a Python program to get the difference between the two lists.
 

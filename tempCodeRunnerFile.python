@@ -1,10 +1,14 @@
-sample_data = 'Python 3.13'
-letters = 0
-digits = 0
+a = 0
+b = 1
+next_number = 0
+Fib_list = [0, 1]
 
-while i < len(sample_data):
-        if sample_data.isalpha():
-                letters = letters + 1
-        if sample_data.isdigit():   
-                  digits = digits + 1
-Print(f"Letters: {letters} \n Digits:  {digits}")
+for i in range(0,50):
+    Fib_list.append(next_number)
+    next_number = a + b
+    if next_number > 50:
+        break
+    a = b
+    b = next_number
+    Fib_list.append(next_number)
+print(Fib_list)

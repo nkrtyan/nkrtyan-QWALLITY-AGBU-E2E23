@@ -1,19 +1,20 @@
-# # Write a Python program to get the Fibonacci series between 0 to 50. 
+# Write a Python program to get the Fibonacci series between 0 to 50. 
 
 # a = 0
-# b = 1 
+# b = 1
 # next_number = 0
-# Fibonacci_series = [0, 1]
+# Fib_list = []
 
-# for i in range(0,50):
-#         next_number = a + b
-#         if next_number > 50:
-#                 break
-#         Fibonacci_series.append(next_number)
-#         a = b
-#         b = next_number
-        
-# print(Fibonacci_series)        
+# for i in range(0, 50):
+#     if a > 50:
+#         break
+#     Fib_list.append(a)
+#     next_number = a + b
+#     a = b
+#     b = next_number
+
+# print(Fib_list)    
+
 
 # # Write a Python program that accepts a string and calculates the number of digits and letters.  
 # Sample Data: Python 3.13
@@ -24,6 +25,7 @@
 # sample_data = 'Python 3.13'
 # letters = 0
 # digits = 0
+
 
 # for index in range(len(sample_data)):
 #         if sample_data[index].isalpha():
@@ -45,10 +47,10 @@
 
 i = 1
 
-while i < 7:
-    print('*')
-    i+=1
-print('*' *5)    
+# while i < 7:
+#     print('*')
+#     i+=1
+# print('*' *5)    
 
 
 
