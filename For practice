@@ -81,22 +81,62 @@
 # if entered_number in number_list:
 #     print(f"The number {entered_number} exists in a list")
 
-# # Write a Python program to get the Fibonacci series between 0 to 50. 
 
-a = 0
-b = 1
-next_number = 0
-Fib_list = []
+# Self-Practicing
 
-for i in range(0,50):
-    if a > 50:
-        break
-    Fib_list.append(a)
-    next_number = a + b
-    a = b
-    b = next_number
+# Ask the user to enter a number.
+# - If the number is greater than 0, print "Positive".
+# - If the number is less than 0, print "Negative".
+# - Otherwise, print "Zero".
 
-print(Fib_list)
+# number = int(input('Dear user, please enter a number:'))
+
+# if number > 0:
+#     print("Positive")
+# if number < 0: 
+#     print("Negative")
+# else:
+#     print("Zero")
+
+#     Grade calculator
+
+# Ask the user to enter a score from 0 to 100.
+# - 90–100 → "Excellent"
+# - 70–89 → "Good"
+# - 50–69 → "Pass"
+# - Below 50 → "Fail"    
+
+# score = int(input('Enter a score from 0 to 100:'))
+
+# if 90 < score < 100:
+#     print('Excellent')
+# elif 70 < score < 89: 
+#     print('Good')
+# elif 50 < score < 69: 
+#     print('Pass')
+# elif score < 50: 
+#     print('Fail')
+# else: 
+#     print("print valid number")
+
+#     Skip number 5
+
+# Use a for loop and continue to print numbers from 1 to 10, but skip 5.
+
+i = 1
+while i < 11:
+    if i == 5:
+        continue
+    i+=1
+
+print(i)
+
+
+
+
+
+
+
    
 
 
