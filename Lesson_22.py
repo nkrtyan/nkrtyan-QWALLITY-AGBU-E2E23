@@ -30,7 +30,10 @@
 # new_numbers.append(min_num) 
 # numbers.remove(min_num)
 # 
-# print(new_numbers)        
+# print(new_numbers)  
+# 
+# 
+#       
 
 
 
