@@ -24,6 +24,4 @@ while a <= 50:
 #Write a Python program to print alphabet pattern 'L'
 for i in range (6):
     print("*")
-print("*******")
-
-for i in range
+print("* * * * * ")
