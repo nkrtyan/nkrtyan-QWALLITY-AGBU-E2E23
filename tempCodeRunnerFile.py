@@ -1,7 +1,5 @@
-student = {
-    "name": "Elma",
-    "surname": "Vardanyan",
-    "education": "MA in PR",
-    "occupation": "GS Team Lead",
-}
-print(student)
+a = 0
+b = 1
+while a <= 50:
+    print(a, end=" ")
+    a, b = b, a + b
