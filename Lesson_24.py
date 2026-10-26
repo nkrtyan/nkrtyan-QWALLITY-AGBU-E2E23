@@ -20,6 +20,7 @@ while a <= 50:
 # print(*fibonacci_result) # * is used not to have the data as a list (AI assisted)
 
 #Write a Python program that accepts a string and calculates the number of digits and letters.
+#couldn't think of any)))
 
 #Write a Python program to print alphabet pattern 'L'
 for i in range (6):
