@@ -117,3 +117,19 @@ print(difference)
 my_tuple = (("name", "Arevik"), ("surname", "Hakobyan"), ("age", 25))
 my_dict = dict(my_tuple)
 print(my_dict)
+
+#8 Union
+set1 = {1,2,3,4}
+set2 = {3, 4, 5, 6}
+union_set = set1.union(set2)
+print(f"Union of sets: {union_set}")
+
+#Dictionary
+student = {
+    "name": "Elma",
+    "surname": "Vardanyan",
+    "education": "MA in PR",
+    "occupation": "GS Team Lead",
+}
+print(student)
+
