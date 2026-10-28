@@ -1,7 +1,7 @@
 # 1.	Write a Python program to get the Fibonacci series between 0 to 50. 
 
 fib_sec = [0,1]
-for i in range(1, 51):
+for i in range(0, 51):
     next_number = fib_sec[i] + fib_sec[i - 1]
     if next_number >= 50:
         break
@@ -27,6 +27,6 @@ print(f"Lettrs in the string: {letter_count}\n Digits in the string: {digits_cou
 
 for i in range(7):
     if i == 6:
-        print("*****")
+        print("*" * 5)
     else:
         print("*")
