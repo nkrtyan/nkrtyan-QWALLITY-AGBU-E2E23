@@ -3,6 +3,7 @@
 # while a<= 50:
 #     print(a, end=" ")
 #     a, b = b, a + b
+
 # text =input("enter a string:")
 # letters=0
 # digits=0
