@@ -1,1 +1,4 @@
-person={"name": "Ani", "surname": "Santrosyan"}
+person={
+    "name": "Ani", 
+    "surname": "Santrosyan"
+    } # TODO, keep this format
