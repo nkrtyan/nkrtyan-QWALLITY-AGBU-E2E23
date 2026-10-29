@@ -1,1 +1,5 @@
-person_info = {"name": "","surname": ""}
+person_info = {
+    "name": "",
+    "surname": ""
+    }
+# TODO,  keep json format
