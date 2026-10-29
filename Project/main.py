@@ -1,3 +1,4 @@
+from person.data import person
 from person.utils import print_person
 
-print_person("Anahit", "Galinyan")
+print_person(person)

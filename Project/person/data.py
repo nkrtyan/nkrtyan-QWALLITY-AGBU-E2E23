@@ -1,8 +1,7 @@
-name = "Anahit"
-surname = "Galinyan"
+person = {
+    "name": "Anahit",
+    "surname": "Galinyan"
 
-def get_full_name(name, surname):
-    return(name + ' ' + surname)
+}  #fix
 
-# x = get_full_name(name, surname)
-# print(x)
+#print(person)
