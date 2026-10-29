@@ -93,7 +93,7 @@
 
 # if number > 0:
 #     print("Positive")
-# if number < 0: 
+# elif number < 0: 
 #     print("Negative")
 # else:
 #     print("Zero")
@@ -110,9 +110,9 @@
 
 # if 90 < score < 100:
 #     print('Excellent')
-# elif 70 < score < 89: 
+# elif 70 <= score <= 89: 
 #     print('Good')
-# elif 50 < score < 69: 
+# elif 50 <= score <= 69: 
 #     print('Pass')
 # elif score < 50: 
 #     print('Fail')
@@ -123,14 +123,41 @@
 
 # Use a for loop and continue to print numbers from 1 to 10, but skip 5.
 
-i = 1
-while i < 11:
-    if i == 5:
-        continue
-    i+=1
+# i = 0
+# while i < 10:
+#     i+=1
+#     if i == 5:
+#         continue
+#     print(i)
 
-print(i)
+# Print only positive numbers
+# numbers = [4, -2, 7, 0, -5, 3, -1, 8]
+# pn = []
 
+# for item in numbers:
+#     if item > 0:
+#         pn.append(item)
+
+# print(pn)
+
+# Write a program that loops through numbers from 1 to 5.
+# - If the number is 3, use pass.
+# - Otherwise, print the number.
+
+# i = 1
+# while i <= 5:
+#     if i == 3:
+#        pass
+#     else:
+#         print(i)
+#     i+=1
+
+# string = '4653'
+# print("".join(reversed(string)))
+
+# set = {'hey', 1 , 8, 'hi'}
+# set.add('ho')
+# print(set)
 
 
 

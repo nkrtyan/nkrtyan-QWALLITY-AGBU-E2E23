@@ -1,14 +1,13 @@
-a = 0
 b = 1
 next_number = 0
-Fib_list = [0, 1]
+Fib_list = []
 
-for i in range(0,50):
-    Fib_list.append(next_number)
+i = 0
+while i < 50:
+    Fib_list.append(a)
     next_number = a + b
-    if next_number > 50:
-        break
     a = b
     b = next_number
-    Fib_list.append(next_number)
-print(Fib_list)
+    i+=1
+
+print(Fib_list)  

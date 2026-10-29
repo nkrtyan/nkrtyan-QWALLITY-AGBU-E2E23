@@ -5,15 +5,16 @@
 # next_number = 0
 # Fib_list = []
 
-# for i in range(0, 50):
-#     if a > 50:
-#         break
+# i = 0
+# while a <= 50:
 #     Fib_list.append(a)
 #     next_number = a + b
 #     a = b
 #     b = next_number
+#     i+=1
 
-# print(Fib_list)    
+# print(Fib_list)  
+  
 
 
 # # Write a Python program that accepts a string and calculates the number of digits and letters.  
@@ -51,6 +52,10 @@ i = 1
 #     print('*')
 #     i+=1
 # print('*' *5)    
+
+
+
+
 
 
 

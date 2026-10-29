@@ -1,0 +1,15 @@
+# input = int(input('Enter a number: '))
+# i = 1
+# while i <= 10:
+#     print(input,'x', i, '=', (input*i))
+#     i+=1
+
+
+
+# for i in range(10):
+#     for j in range(i):
+#         print(i, end=' ')
+#     print()
+
+
+        
