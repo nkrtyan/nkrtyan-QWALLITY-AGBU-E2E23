@@ -3,4 +3,4 @@ get_user = {
     # "Armine"
     "Surname": input("Input your surname: "),
     # "Petrosyan"
-}
+} # TODO, keep your name and surname directly in json, no need get data from input now

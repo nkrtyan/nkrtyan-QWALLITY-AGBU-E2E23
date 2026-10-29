@@ -4,6 +4,6 @@ def get_full_name(name, surname):
     return  f"User name: {name} {surname}"
 
 def print_person():
-    a = data.get_user["Name"]
+    a = data.get_user["Name"] # TODO, be carefull with variable name
     b = data.get_user["Surname"]
     print(get_full_name(a, b))
