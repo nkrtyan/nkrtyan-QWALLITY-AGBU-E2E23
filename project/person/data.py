@@ -1,2 +1,5 @@
-person_info={"name":"Knarik", "surname":"Avetyan"}
-print(person_info)
+person_info={
+    "name":"Knarik", 
+    "surname":"Avetyan"
+    } # TODO, keep this format
+print(person_info) # TODO, extra
