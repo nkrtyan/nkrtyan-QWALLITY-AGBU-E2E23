@@ -1,15 +1,15 @@
 # code for Fibonacci series
 
-fibonacci_series=[]
+fibonacci_series=[0,1]
 x=0
 y=1
-z=x+y
-while (z<=50):
-     z=x+y
-     fibonacci_series.append(z)
-     x=y
-     y=z
-     z=x+y
+
+while x+y<=50:
+    z=x+y
+    fibonacci_series.append(z)
+    x=y
+    y=z
+
 print("fibanachi series: ", fibonacci_series)
        
 #A loop for counting the letters and digits in the text
@@ -18,7 +18,7 @@ letters=0
 digits=0
 for i in sample_data:
     if i.isalpha():
-          letters+=1
+        letters+=1
     elif i.isdigit():
         digits+=1
 print("letters:",letters, "\n" "digits:", digits)
