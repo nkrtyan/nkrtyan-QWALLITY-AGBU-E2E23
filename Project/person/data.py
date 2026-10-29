@@ -1,4 +1,4 @@
 person = {
     "name": "Mariam", 
     "surname": "Avetisyan"
-    } # TODO, keep this format
+    } # TODO, keep this format - fixed
