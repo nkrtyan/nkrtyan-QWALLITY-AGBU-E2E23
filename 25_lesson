@@ -1,0 +1,8 @@
+# for i in range (0, 10):
+#     if i < 6:
+#         print("*")
+#     else:print("*", end = " ")
+    
+
+x = 5
+for i 
