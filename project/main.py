@@ -1,7 +1,6 @@
-import person.data # TODO, not used
-import person.utils
-from person.utils import print_person # TODO, you can import like this
+import person.data  # TODO, not used #DONE
+from person.utils import print_person # TODO, you can import like this #DONE
 
-result=person.utils.print_person()
+result=print_person()
 print(result)
 # Nel, working code, but i would like to get data here and pass to function
