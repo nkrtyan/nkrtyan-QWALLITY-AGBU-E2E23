@@ -1,0 +1,13 @@
+f = open("test.txt", "a+", encoding="utf-8")
+f.write("Hello\n")
+f.write("it's my first file handing!\n")
+f.seek(0)
+data = f.read()
+print(data)
+f.close()
+
+
+f = open('test.txt', 'a+', encoding='utf-8')
+f.write("Hello\n")
+f.write("it's my first file handing!\n")
+f.seek(0)
