@@ -1,0 +1,16 @@
+with open ("my_data.txt", "a+") as file:
+    file.write("Hello\nit's my first file handling!\n")
+    file.seek(0)
+    data = file.read()
+    print(data)
+
+# def create_file():
+#     i = 65
+#     while i <= 90:
+#         with open (chr(i) + ".txt", "a+") as file:
+#             i+=1
+
+# create_file()      
+
+
+

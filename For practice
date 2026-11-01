@@ -160,6 +160,14 @@
 # print(set)
 
 
+# f = open("my_data.txt", "a+", encoding="utf-8")
+# f.write("\nHey")
+# f.seek(0)
+# data = f.read()
+# print(data)
+
+
+
 
 
 
