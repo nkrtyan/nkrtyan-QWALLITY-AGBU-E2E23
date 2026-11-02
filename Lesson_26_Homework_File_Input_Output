@@ -1,8 +1,12 @@
-with open ("my_data.txt", "a+") as file: # TODO, move the logic under function and give file name as an argument
-    file.write("Hello\nit's my first file handling!\n")
-    file.seek(0)
-    data = file.read()
-    print(data)
+# def file_handling(file): #Fixed, move the logic under function and give file name as an argument
+#         with open (file, "w+") as myfile:    
+#             myfile.write("Hello\nit's my first file handling!\n")
+#             myfile.seek(0)
+#             data = myfile.read()
+#             print(data)
+
+# (file_handling("my_data.txt"))
+
 
 # def create_file(): # Nel, this part is correct
 #     i = 65
@@ -11,8 +15,22 @@ with open ("my_data.txt", "a+") as file: # TODO, move the logic under function a
 #             i+=1
 
 # create_file()      
+# Fixed, no need to commit files created by code. Keep the branch clean
 
-# TODO, no need to commit files created by code. Keep the branch clean
+import os
+
+def delete_file():
+    i = 65
+    count = 0
+    while i <= 90:
+        filename = chr(i) + ".txt"
+        if os.path.exists(filename):
+            os.remove(filename)
+            count+=1
+        i+=1
+    print(f"Deleted {count} files")    
+delete_file()
+
 
 
 
