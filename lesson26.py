@@ -1,8 +1,9 @@
 #Task1
+# TODO, make a function and as an argument take  file name
 with open("newfile.txt", "w+") as file:
     file.writelines("Hello" + "\nIt's my first file handling!")
     
-with open("newfile.txt", "r") as read_file:
+with open("newfile.txt", "r") as read_file: # TODO, code duplication, when you open task use seek(0) to go up of the file and read it
     data = read_file.read()
     print(data)
 
@@ -13,3 +14,4 @@ def create_files():
             file.write(letter)
             
 create_files()
+# Nel, this part is correct
