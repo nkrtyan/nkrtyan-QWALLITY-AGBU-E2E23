@@ -4,7 +4,7 @@ from utils import display_books, get_book, add_book, delete_book
 title = input('Enter book title: ')
 deleteBook = 'Eugene Onegin' # можно получать через input, но для удобства хардкод
 
-key = 'Eugene Onegin' # этот блок можно получать через input, но для удобства хардкод
+key = 'Gore ot uma1' # этот блок можно получать через input, но для удобства хардкод
 author = 'Bulgakov'
 page = 480
 year = 1967
