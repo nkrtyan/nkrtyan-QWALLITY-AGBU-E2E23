@@ -1,10 +1,13 @@
 #Task1
-with open("newfile.txt", "w+") as file:
-    file.writelines("Hello" + "\nIt's my first file handling!")
+def file_handling(file_name):
+    with open(file_name, "w+") as file:
+        file.writelines("Hello" + "\nIt's my first file handling!")
     
-with open("newfile.txt", "r") as read_file:
-    data = read_file.read()
-    print(data)
+        file.seek(0)
+        data = file.read()
+        print(data)
+
+file_handling("my_file.txt")
 
 #Task2: Write a Python function which generates 26 text files named A.txt, B.txt, and so on up to Z.txt.
 def create_files():
@@ -13,3 +16,4 @@ def create_files():
             file.write(letter)
             
 create_files()
+# Nel, this part is correct
