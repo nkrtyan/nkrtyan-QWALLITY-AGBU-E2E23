@@ -1,19 +1,20 @@
 import os
 import shutil
 import logging
+# TODO, move logging.basicConfig here, after imports
 
-direct_name = "Demo"
+direct_name = "Demo"  # TODO, "direct" is not clear name, use dir_name
 file_name = "test.txt"
 
 def create_direct(direct_name):
-    if not os.path.exists(direct_name):
+    if not os.path.exists(direct_name):  
         os.mkdir(direct_name)
 
 
 
-def create_write_file(file_name, direct_name):
-    os.chdir(direct_name)
-    with open(file_name, "a+") as file:
+def create_write_file(file_name, direct_name):  # TODO, keep 2 empty lines between functions
+    os.chdir(direct_name) 
+    with open(file_name, "a+") as file:  
         file.write("This is the content of the file.")
 
 
@@ -44,22 +45,24 @@ def print_separator():
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
-    datefmt='%d-%m-%Y',
+    datefmt='%d-%m-%Y',  
     filename='mylog.log',
     filemode='a+',
 )
 
 
 if __name__ == "__main__":
+
     create_direct(direct_name)
     create_write_file(file_name, direct_name)
     read_file(file_name)
-    print_separator()
+    print_separator() # TODO, extra function
     cleanup_direct(direct_name)
     os.chdir("..")
-    if not os.path.exists(direct_name):
+    if not os.path.exists(direct_name): # TODO, move this checking inside cleanup
         logging.info("That directory has been deleted.")
     else:
         logging.error("That directory has not been deleted.")
+# TODO, remove extra empty lines at the end of file
 
 
