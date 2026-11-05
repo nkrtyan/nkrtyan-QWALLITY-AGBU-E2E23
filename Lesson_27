@@ -1,4 +1,4 @@
-import os
+import os  # TODO, file has no .py extension, add it to file name
 import shutil
 import logging
 
@@ -8,25 +8,26 @@ logging.basicConfig(
     datefmt='%d-%m-%Y %H:%M:%S', 
     filename='my_log.log', 
     filemode='a',  
-	encoding='utf-8'  
+	encoding='utf-8'  # TODO, use 4 spaces, not tab, and remove empty line below
 
 )
 
-
+# TODO, mobve under main block
 new_folder = "Demo"
 file_name = 'test.txt'
 content = "This is the content of the file."
 
-def folder(new_folder, file_name, content):
+# TODO, not clear what is doing this function based on name
+def folder(new_folder, file_name, content):  # TODO, rename to verb, like create_folder
     if not os.path.exists(new_folder):
-       os.mkdir(new_folder)
-       logging.info (f"Folder '{new_folder}' created successfully.")
+       os.mkdir(new_folder) 
+       logging.info (f"Folder '{new_folder}' created successfully.")  # TODO, remove space before "(" in all places
     os.chdir(new_folder)
     with open(file_name, "w+", encoding="utf-8") as file:
         file.write(content)
         logging.info (f"File '{file_name}' created successfully.")
 
-#folder(new_folder, file_name, content)
+#folder(new_folder, file_name, content)  # TODO, remove commented code in all places, keep 2 empty lines between functions
 
 def read_file(file_name):
     with open(file_name, "r", encoding="utf-8") as file:
@@ -54,7 +55,7 @@ if __name__ == "__main__":
     folder(new_folder, file_name, content)
     read_file(file_name)
     delete_folder(new_folder)
-    logging.debug('This is a debug message')
+    logging.debug('This is a debug message')  # TODO, remove test log messages, lines below are outside of __main__ block
 logging.info('This is an info message')
 logging.warning('This is a warning message')
 logging.error('This is an error message')
