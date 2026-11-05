@@ -1,0 +1,7 @@
+2026-11-05 20:47:27,767--------INFO--------Program started
+2026-11-05 20:47:27,769--------INFO--------Directory Demo creation function executed
+2026-11-05 20:47:27,771--------INFO--------Nested file Demo\test.txtcreated and content added.
+2026-11-05 20:47:27,771--------INFO--------File created successfully
+2026-11-05 20:47:27,774--------INFO--------Nested file Demo\test.txt read
+2026-11-05 20:47:43,609--------INFO--------Directory deleted successfully
+2026-11-05 20:47:43,609--------INFO--------Program finished
