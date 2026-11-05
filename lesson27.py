@@ -13,21 +13,21 @@ dir_name = "Demo"
 
 def create_directory():
    if not os.path.exists(dir_name):
-       os.mkdir(dir_name)
-logging.info(f"Directory '{dir_name}' is ready.")
+      os.mkdir(dir_name)
+      logging.info(f"Directory '{dir_name}' is ready.")
 
 def write_file():
    file_path = os.path.join(dir_name, "test.txt")
    with open(file_path, "w+") as file:
-       file.write("This is the content of the file.")
-logging.info("File 'test.txt' created and written.")
+      file.write("This is the content of the file.")
+      logging.info("File 'test.txt' created and written.")
 
 def read_file():
    file_path = os.path.join(dir_name, "test.txt")
    with open(file_path, "r") as file:
-       content = file.read()
-       print("File content:", content)
-logging.info("File content read successfully.")
+      content = file.read()
+      print("File content:", content)
+      logging.info("File content read successfully.")
 
 def cleanup():
    answer = input("Do you want to delete the Demo directory and its contents? (yes/no): ")
