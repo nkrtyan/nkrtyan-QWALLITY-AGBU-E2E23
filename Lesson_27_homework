@@ -5,6 +5,11 @@ import logging
 directory_name = "demo"
 file_path = os.path.join(directory_name, "test.txt")
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s: %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
 
 def create_directory():
     if not os.path.exists(directory_name):
@@ -39,3 +44,11 @@ def delete_directory():
             logging.info("Directory and its contents deleted successfully.")
         else:
             logging.info("Deletion canceled.")
+
+if __name__ == "__main__":
+    create_directory()
+    create_file()
+    read_file()
+    delete_directory()
+
+    logging.info("Directory and file operations completed successfully.")
