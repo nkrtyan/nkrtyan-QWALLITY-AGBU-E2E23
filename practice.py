@@ -283,3 +283,34 @@ my_list = [1, 2, 3, 5, 8, 9]
 
 # read_df = pandas.read_excel("newfile.xlsx")
 # print(read_df)
+
+
+# import os
+# import shutil
+
+# dir_name = "Direct"
+# file_name = "mydir_file.txt"
+# content = "Hello Varduhi!!"
+
+# def create_directory(direct_name, file_name, text):
+#     if not os.path.exists(direct_name):
+#         os.mkdir(direct_name)
+#     os.chdir(direct_name)
+#     with open(file_name, "w+") as file:
+#         file.write(text)
+
+# def delete_directory(direct_name):
+#     question = input(f"Are you sure you want to delete the directory '{direct_name}'? (yes/no): ")
+#     if question == "yes":
+#         # print(os.getcwd())
+#         os.chdir("..")
+#         if os.path.exists(direct_name):
+#             shutil.rmtree(direct_name)
+#             print(f"Directory '{direct_name}' has been deleted.")
+
+
+# if __name__ == "__main__":
+#     create_directory(dir_name, file_name, content)
+#     delete_directory(dir_name)
+
+
