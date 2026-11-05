@@ -26,7 +26,7 @@ def write_file(file_path, content):
 def read_file(file_path):
     if not os.path.exists(file_path):
         logging.error(f"File '{file_path}' does not exist.")
-        return
+        return # TODO, what you return here?
     
     with open(file_path, 'r', encoding='utf-8') as f:
         data = f.read()
@@ -62,3 +62,4 @@ if __name__ == "__main__":
     clean_up(my_directory)
     
     print("Program finished. Check 'my_log.log'.")
+# TODO, the code is clean and structured, good for you
