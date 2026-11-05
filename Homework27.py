@@ -2,6 +2,7 @@ import os
 import shutil
 import logging
 
+# TODO, move this variable under main block
 directory_name = "Demo"
 file_name = "test.txt"
 content = "This is the content of the file."
@@ -54,3 +55,4 @@ if __name__ == "__main__":
     file_writing(file_name, content)
     file_reading(file_name,content)
     cleanup(directory_name)
+# TODO, good job, structured and correct
