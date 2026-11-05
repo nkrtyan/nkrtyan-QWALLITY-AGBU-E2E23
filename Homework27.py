@@ -2,11 +2,6 @@ import os
 import shutil
 import logging
 
-# TODO, move this variable under main block
-directory_name = "Demo"
-file_name = "test.txt"
-content = "This is the content of the file."
-
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s [%(levelname)s] %(message)s', 
@@ -51,6 +46,10 @@ def cleanup(direct_name):
         logging.warning(f"Skip.")
     
 if __name__ == "__main__":
+    # TODO, move this variable under main block
+    directory_name = "Demo"
+    file_name = "test.txt"
+    content = "This is the content of the file."
     create_directory(directory_name)
     file_writing(file_name, content)
     file_reading(file_name,content)
