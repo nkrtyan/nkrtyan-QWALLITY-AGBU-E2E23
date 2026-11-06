@@ -29,7 +29,7 @@ def create_file_results(dir_name, file_name):
     file_path = os.path.join(dir_name, file_name)
     df = pandas.DataFrame(data)
     df.to_excel(file_path, index=False)
-    logging.info(f"{file_name} is created.")
+    logging.info(f"{file_path} is created.")
 
 def analyze_results(dir_name, file_name):
     file_path = os.path.join(dir_name, file_name)
@@ -40,13 +40,15 @@ def analyze_results(dir_name, file_name):
     low_score = df["Score"].min()
     
     
-    
-    # highest_score = name_score[name_score["Score"] == high_score["Name"]]
-    # lowest_score = name_score[name_score["Score"] == low_score["Name"]]
-    
+    for _, n in name_score.iterrows():
+        if n["Score"] == high_score:
+            print(f"The highest score is : {high_score} and the student is {n['Name']}.")
+        elif n["Score"] == low_score:
+            print(f"The lowest score is : {low_score} and the student is {n['Name']}.")
+
     logging.info(f"The count of students is {count_students}.")
     logging.info(f"The highest score is : {high_score}.")
-    logging.info(f"The lowest score is {lowest_score}.")
+    logging.info(f"The lowest score is {low_score}.")
     
     
 
