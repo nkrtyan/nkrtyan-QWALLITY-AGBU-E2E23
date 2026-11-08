@@ -1,6 +1,16 @@
-with open("homework_26.txt", "w+", encoding="utf-8") as file: # TODO, move the logic inside the function and gioive filename as an argumnet
-    file.write("Hello\n")
-    file.write("it’s my first file handling!\n ")
+filename = "homework_26.txt"
+content = "Hello\n"
+content1 = "it’s my first file handling!\n "
+
+def create_file(filename, content):
+    with open(filename, "w+", encoding="utf-8") as file:
+        file.write(content)
+        file.seek(0)
+        data = file.read()
+        print(data)
+with open(filename, "w+", encoding="utf-8") as file: # TODO, move the logic inside the function and gioive filename as an argumnet
+    file.write(content)
+    file.write(content1)
     file.seek(0)
     data = file.read()
     print(data)
