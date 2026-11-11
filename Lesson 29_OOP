@@ -1,0 +1,37 @@
+sports = {
+
+    'swimming': {'price': 40000, 'duration': 16},
+    'tennis': {'price': 50000, 'duration': 10}
+
+}
+
+class Sport_Sessions():
+
+    def __init__(self, name, price, number_of_session):
+        self.name = name
+        self.price = price
+        self.number_of_session = number_of_session
+
+    def duration_each_session(self):
+        session_price = self.price / self.number_of_session
+        print(f"{self.name} - {session_price} AMD per session")
+
+swimming_obj = Sport_Sessions(
+    'Swimming',
+    sports['swimming']['price'],
+    sports['swimming']['duration']
+    )    
+
+tennis_obj = Sport_Sessions(
+    'Tennis',
+    sports['tennis']['price'],
+    sports['tennis']['duration']
+    )
+
+
+swimming_obj.duration_each_session()
+tennis_obj.duration_each_session()
+
+
+
+
