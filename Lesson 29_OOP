@@ -32,6 +32,3 @@ tennis_obj = Sport_Sessions(
 swimming_obj.duration_each_session()
 tennis_obj.duration_each_session()
 
-
-
-
