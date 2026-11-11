@@ -1,17 +1,14 @@
 import os
 import shutil
 import logging
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
-    datefmt='%d-%m-%Y',
+    datefmt='%d-%m-%Y',  
     filename='mylog.log',
     filemode='a+',
 )
-
-
-dir_name = "Demo"
-file_name = "test.txt"
 
 
 def create_direct(dir_name):
@@ -50,7 +47,9 @@ def print_separator():
 
 
 if __name__ == "__main__":
-
+    dir_name = "Demo"
+    file_name = "test.txt"
+    
     create_direct(dir_name)
     create_write_file(file_name, dir_name)
     read_file(file_name)
