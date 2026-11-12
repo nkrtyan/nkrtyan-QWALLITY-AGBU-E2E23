@@ -9,30 +9,29 @@ sports_data = {
     }
 }
 
-class SPORT:  # TODO, class name should be CamelCase: Sport, remove empty lines below
-
-
-    def __init__(self, name, price, numberofsessions):  # TODO, use snake_case: number_of_sessions
+class Sport:  # TODO, class name should be CamelCase: Sport, remove empty lines below
+    def __init__(self, name, price, number_of_sessions):  # TODO, use snake_case: number_of_sessions
         self.name = name
         self.price = price
-        self.numberofsessions = numberofsessions
+        self.number_of_sessions = number_of_sessions
 
     # TODO, keep two lines between methods/functions
     def get_session_price(self):
-        return f'{self.name} = {self.price/self.numberofsessions} AMD per session' 
-    
-    
-# TODO, remove commented code below
-# sport1 = Sport(list(sports.keys())[0],sports['Swimming']['price'], sports['Swimming']['sessions'])
-# sport2 = Sport(list(sports.keys())[1], sports['Tennis']['price'], sports['Tennis']['sessions'])
+        return f'{self.name} = {self.price/self.number_of_sessions} AMD per session' 
 
 # TODO, need main block, 
-for sport_name, sport_info in sports_data.items():
-    sport = SPORT ( # TODO, no need space fbetween SPORT (
-        sport_name ,  # TODO, no need space before ","
-        sport_info['price'], 
-        sport_info['sessions']
+def get_sports():
+    for sport_name, sport_info in sports_data.items():
+        sport = Sport( # TODO, no need space fbetween SPORT (
+            sport_name,  # TODO, no need space before ","
+            sport_info['price'],
+            sport_info['sessions']
         )
-    print(sport.get_session_price()) # TODO, move print i the function
+        print(sport.get_session_price()) # TODO, move print i the function
+    
+
+if __name__ == '__main__':
+    get_sports()
+
 
 # Nel, the code is correct
