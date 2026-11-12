@@ -1,21 +1,23 @@
-sports = {
+sports = {  # TODO, file has no .py extension, add it; remove empty lines inside dictionary
 
-    'swimming': {'price': 40000, 'duration': 16},
+    'swimming': {'price': 40000, 'duration': 16},  # TODO, 16 is number of sessions, not duration, rename key to 'sessions'
     'tennis': {'price': 50000, 'duration': 10}
 
 }
 
-class Sport_Sessions():
+class Sport_Sessions():  # TODO, recomended CamelCase without "_" and "()": class SportSession:
 
     def __init__(self, name, price, number_of_session):
         self.name = name
         self.price = price
         self.number_of_session = number_of_session
 
-    def duration_each_session(self):
+    def duration_each_session(self):  # TODO, it calculates price, rename to calculate_session_price
         session_price = self.price / self.number_of_session
         print(f"{self.name} - {session_price} AMD per session")
 
+# TODO, keep 2 empty lines after class, add main block
+# TODO, use for loop with sports.items() instead of creating each object by hand
 swimming_obj = Sport_Sessions(
     'Swimming',
     sports['swimming']['price'],
@@ -31,4 +33,4 @@ tennis_obj = Sport_Sessions(
 
 swimming_obj.duration_each_session()
 tennis_obj.duration_each_session()
-
+# Nel, working code
