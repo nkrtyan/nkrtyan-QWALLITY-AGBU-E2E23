@@ -19,11 +19,11 @@ class Sport:
 
     def get_session_price(self):
         session_price = self.price / self.sessions
-        return session_price
+        return session_price # TODO, you can print directly here
 
 
 def main():
-    for name in sports:
+    for name in sports: # TODO, use sports.items()
         sport_obj = Sport(
             name, 
             sports[name]["price"], 
@@ -36,3 +36,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# Nel, working code, no comment
