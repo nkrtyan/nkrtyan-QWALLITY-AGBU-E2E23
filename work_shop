@@ -1,0 +1,60 @@
+import os
+import shutil
+import logging
+import pandas as pd
+
+data = {
+"Name": ["Anna", "David", "Emma", "Mark", "Sophia"],
+"Subject": ["Python", "Python", "Python", "Python", "Python"],
+"Score": [85, 92, 78, 88, 95]
+}
+
+def setup_logging():
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s - %(levelname)s - %(message)s")
+    
+
+def create_directory(directory_name):
+    
+    if not os.path.exists(directory_name):
+        os.makedirs(directory_name)
+        logging.info(f"Directory '{directory_name}' created.")
+
+def create_results_file(directory_name, file_name):
+    file_path = os.path.join(directory_name, file_name)
+    df = pd.DataFrame(data)
+    df.to_excel(file_path, index=False)
+    logging.info(f"Results file '{file_path}' created with sample data.")
+        
+
+def analyze_results(directory_name, file_name):
+    file_path = os.path.join(directory_name, file_name)
+    if not os.path.exists(file_path):
+        logging.error(f"File '{file_path}' does not exist.")
+        return
+    df = pd.read_excel(file_path)
+    avg_score = df["Score"].mean()
+    max_score = df["Score"].max()
+    min_score = df["Score"].min()
+    logging.info(f"Analysis results for '{file_path}':")
+    logging.info(f"Average Score: {avg_score}")
+    logging.info(f"Maximum Score: {max_score}")
+    logging.info(f"Minimum Score: {min_score}")
+
+
+def cleanup(directory_name):
+    if os.path.exists(directory_name):
+        shutil.rmtree(directory_name)
+        logging.info(f"Directory '{directory_name}'                    and its contents have been removed.")
+        
+
+
+if __name__ == "__main__":
+    folder_name = "exam_results"
+    file_name = "python_exam_results.xlsx"
+    setup_logging()
+    create_directory(folder_name)
+    create_results_file(folder_name, file_name)
+    analyze_results(folder_name, file_name)
+    #cleanup(folder_name)
