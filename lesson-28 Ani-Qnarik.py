@@ -1,0 +1,60 @@
+import logging
+import os
+import pandas
+import shutil
+
+data = {
+“Name”:[“Anna”,“David”,“Emma”, “Mark”, “Sofia”],
+“Subject”:[“Python”,“Python”, “Python”, “Python”, “Python”],
+“Score”: [85, 92, 78, 88, 95]
+}
+
+def setup_logging():
+logging.basicConfig(
+level=logging.INFO,
+format=“%(asctime)s ---- %(levelname)s ----- %(message)s”,
+datefmt=“%d-%m-%Y”,
+filename=“app.log”,
+filemode=“a+“,
+encoding=“utf-8")
+
+def create_directory(directory_name):
+    if not os.path.exists(directory_name):
+        os.mkdir(directory_name)
+        logging.info(f”The {directory_name} was created.”)
+                     else:
+                        logging.info(f”The {directory_name} was already created.”)                            
+def create_result_file(directory_name, file_name):
+    df=pandas.DataFrame(data)
+    file_path=os.path.join(directory_name, file_name)
+    if not os.path.exists (file_path):
+        df.to_excel(file_path,index=False)
+        logging.info(f”{file_name} was created.”)
+                     else:
+                        logging.info(f”{file_name} was already created in directory.”)
+                                                      
+def analyze_result(directory_name, file_name):
+    file_path=os.path.join(directory_name,file_name)
+    df=pandas.read_excel (file_path)
+    df=df[[“Name”,“Score”]]
+           total=df[“Score”].count()
+                    logging.info(f”Number of examined student: {total}“)
+                                 best_result = df.loc[df[“Score”].idxmax()]                                                      logging.info(f”Best result: {best_result[‘Name’]}-{best_result[‘Score’]}“)
+lowest_result = df.loc[df[“Score”].idxmin()]
+                          logging.info(f’Lowest result: {lowest_result[‘Name’]}-{lowest_result[‘Score’]}‘)
+                                                                                                                                  def cleanup(directory_name):
+                                                                                                                                    if os.path.exists(directory_name):
+                                                                            answer=input(f”Do you want to delete the {directory_name}? Y/N “)
+if answer.upper()==“Y”:
+shutil.rmtree(directory_name)
+logging.info(f{directory_name} is deleted)
+else:
+logging.info(f{directory_name} is not deleted)
+
+if name == “main”:
+    setup_logging()
+create_directory(“Examination_Results”)
+create_result_file(“Examination_Results”,“Exam_Results.xlsx”)
+analyze_result(“Examination_Results”,“Exam_Results.xlsx”)
+cleanup(“Examination_Results”)
+        
