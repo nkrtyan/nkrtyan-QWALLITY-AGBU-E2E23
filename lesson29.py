@@ -8,33 +8,27 @@ sports = {
         "price": 50000, 
         "sessions": 10
         }
-} # TODO, keep this format
+} 
 
-class Sport:  # TODO, keep 2 empty lines before class
-    def __init__(self, name, price, n_sessions):  # TODO, recomended to use same name for argument and attribute: sessions
+
+class Sport:  
+    def __init__(self, name, price, sessions):  
         self.name = name
         self.price = price
-        self.sessions = n_sessions
+        self.sessions = sessions
 
     def calculate_session_price(self):
-        return self.price / self.sessions # TODO, print directly here
+        print(self.price / self.sessions)  
     
 
-# TODO, add main block
-# TODO, use for loop with sports.items() instead of creating each object by hand
-swimming_obj = Sport(
-    "Swimming",
-    sports["Swimming"]["price"],
-    sports["Swimming"]["sessions"]
-)
-
-tennis_obj = Sport(
-    "Tennis",
-    sports["Tennis"]["price"],
-    sports["Tennis"]["sessions"]
-)
-
-
-print(f"{swimming_obj.name} - {swimming_obj.calculate_session_price()} AMD per session")
-print(f"{tennis_obj.name} - {tennis_obj.calculate_session_price()} AMD per session")
+if __name__ == "__main__":
+    for name, sport_info in sports.items():
+        sport_obj = Sport(
+            name,
+            sport_info["price"],
+            sport_info["sessions"]
+        )
+        print(f"{sport_obj.name} session price is: ")
+        sport_obj.calculate_session_price()
+        
 # Nel, working code, have a look to TODO
