@@ -23,7 +23,7 @@ class Mouse(Animal):
         self.food = food
 
     def showInfo(self):
-            pass  
+        print(f"{self.name} like to eat {self.food} ")  
 
 class Duck(Animal):
     def __init__(self, name, color):
@@ -31,9 +31,18 @@ class Duck(Animal):
         self.color = color
 
     def showInfo(self):
-            pass        
+            print(f"{self.name} have {self.color} color")         
 
 if __name__ == "__main__":
     
-    cat_obj = Cat(input("Tom"))
-                 
+    cat_obj = Cat(input("Input name for cat: "), age = 4, height = "30 cm")
+    cat_obj.showInfo()
+
+    mouse_obj = Mouse(input("Input name for mouse: "), input("Input food that mouse like: "))
+    mouse_obj.showInfo()
+
+    duck_obj = Duck(input("Input name for duck: "), input("Input color for duck: "))
+    duck_obj.showInfo()
+
+    
+            
