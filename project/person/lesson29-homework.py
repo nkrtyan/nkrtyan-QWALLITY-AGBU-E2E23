@@ -21,8 +21,10 @@ class sport:
 
 Swimming_obj=sport(
      "Swimming"
+     
      )
 Tennis_obj=sport("Tennis")
 Swimming_obj.calculate_price()
 Tennis_obj.calculate_price()
+
 
