@@ -15,7 +15,7 @@ class Student(Person):
         
         
     def print_name(self):
-        print(f'{self.name} {self.surname} is learning in {self.course_type} at {self.year}: ')
+        print(f'{self.name} {self.surname} is learning in {self.course_type} in {self.year}: ')
         
         
         
