@@ -198,58 +198,56 @@
 # multiplication_table(3)     
 
 
-def count_vowels(text):
-    total_number = 0
-    for i in text.lower():
-        if i in ("a", "e", "i", "o", "u"):
-          total_number+=1
-    return total_number
+# def count_vowels(text): 
+#     total_number = 0
+#     for i in text.lower():
+#         if i in ("a", "e", "i", "o", "u"):
+#           total_number+=1
+#     return total_number
 
-print(count_vowels("Hello Python"))    
-
-
+# print(count_vowels("Hello Python"))    
 
 
+# from datetime import datetime
+
+# class MYDateClass:
+
+#     @staticmethod
+#     def get_utc_date():
+#         return datetime.now()
+
+# print(MYDateClass.get_utc_date())
+
+# class MyClass:
+#     instance_counter = 0
+
+#     def __init__(self):
+#         MyClass.instance_count += 1
+#         print(MyClass.instance_count)
+
+#     @classmethod
+#     def reset_instance_count(cls):
+#         print("Resetting count of instances")
+#         cls.instance_count = 0
+
+# obj_1 = MyClass()
+# obj_2 = MyClass()
+# MyClass.reset_instance_count()
+# obj_3 = MyClass()
 
 
+class Person:
+    def __init__(self, firstname, lastname):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.printname = printname
+
+    def printname(self):
+        print(f"self.firstname self.lastname")
+class Student(Person):
+    def __init__(self, firstname, lastname):
+        Person.__init__(self, firstname, lastname)
+
+        
 
 
-           
-
-    
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-   
-
-    

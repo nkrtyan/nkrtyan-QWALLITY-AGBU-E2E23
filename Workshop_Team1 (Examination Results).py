@@ -42,7 +42,9 @@ def analyze_results(file_path):
 
   highest_score = scores.max()
   lowest_score = scores.min()
+
   logging.info(f'Number of examined students: {len(names)}')
+
   for i in range(len(names)):
     if scores[i] == highest_score:
       logging.info(f"Best result: {names[i]} - {scores[i]}")
@@ -79,6 +81,4 @@ if __name__ == "__main__":
   analyze_results(file_path)
   cleanup(dir_name)
 
-
-
-  
+  logging.info("Program finished")
