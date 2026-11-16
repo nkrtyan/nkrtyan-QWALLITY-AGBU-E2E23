@@ -1,137 +1,145 @@
 import logging
-
 class CarMarket:
-
-    car_info = {
-
-    "BMW":
-    {
-       "Price": 50000, "Stock": 5 
-    },
-    "Toyota":
-    {
-       "Price": 30000, "Stock": 5  
-    },
-    "Ford":
-    {
-        "Price": 35000, "Stock": 5 
-    },
-    "Honda":
-    {
-        "Price": 32000, "Stock": 5
-    },
-    "Kia":
-    {
-        "Price": 34000, "Stock": 5
-    },
-    "BYD Sealion":
-    {
-        "Price": 40000, "Stock": 5
-    },
-    "Bugatti":
-    {
-        "Price": 2500000, "Stock": 5
-    },
-    "Audi":
-    {
-        "Price": 55000, "Stock": 5
-    },
-    "Mercedes-Benz":
-    {
-        "Price": 60000, "Stock": 5
-    },
-    "Hyundai":
-    {
-        "Price": 27000, "Stock": 5
+    
+    car_market = {
+        "BMW": 
+        {
+           "Price": 50000, "Stock": 5
+        },
+        "Toyota": 
+        {
+           "Price": 30000, "Stock": 5
+        },
+        "Ford": 
+        {
+           "Price": 35000, "Stock": 5
+        },
+        "Honda":
+        {
+           "Price": 32000, "Stock": 5
+        },
+        "Kia":
+        {
+           "Price": 34000, "Stock": 5
+        },
+        "BYD Sealion":
+        {
+           "Price": 40000, "Stock": 5
+        },
+        "Bugatti":
+        {
+           "Price": 2500000, "Stock": 5
+        },
+        "Audi":
+        {
+           "Price": 55000, "Stock": 5
+        },
+        "Mercedes-Benz":
+        {
+           "Price": 60000, "Stock": 5
+        },
+        "Hyundai":
+        {
+           "Price": 27000, "Stock": 5
+        }
     }
-}  
-
-
+    
+    
     def check_car_existence(self, brand):
-        if brand in self.car_info:
+        if brand in self.car_market:
             return True
         else:
             return False
-
+    
+    
     def show_market(self):
-        print("\n AVAILABLE CARS: \n")
+        print("\n========== CAR MARKET ==========")
 
-        for car, details in self.car_info.items():
-            print(f"{car} - Price: {details["Price"]}$ - Stock: {details["Stock"]}")
-        logging.info("Car Market shows successfully")    
-
-    def calculate_price(self,brand):
+        for brand, details in self.car_market.items():
+            print(
+                f"Brand: {brand} | "
+                f"Price: {details['Price']} | "
+                f"Stock: {details['Stock']}"
+            )
+            logging.info("Car Market shows successfully") 
+    
+    
+    def calculate_price(self, brand):
         if self.check_car_existence(brand):
-            return self.car_info[brand]["Price"]
+            return self.car_market[brand]['Price']
         else:
             return None
-            
-        
-class MyCar(CarMarket):
-    
-    def calculate_price(self,brand):
-        original_price = super().calculate_price(brand)
+            logging.info("Car {brand} is unavailable for price calculation.")
+                   
 
+class MyCar(CarMarket):
+        
+    def calculate_price(self, brand):
+        original_price = super().calculate_price(brand)
+        
         if original_price is None:
             return None
+            logging.info("{original_price} is unavailable. ")
 
+        
         if brand == "BMW":
-            discounted_price = original_price * 0.8
-            return discounted_price
+            return original_price * 0.80
         else:
-            return original_price   
-
-
-    def search_car(self,brand):
-        print("\n Searched Car Info: ")
-        if self.check_car_existence(brand):
-
+            return original_price
+        
+        
+    def search_car(self, brand):
+        if not self.check_car_existence(brand):
+            print(f"{brand} is not available in our market.")
+            logging.info("Unsuccessful search: {brand} is unavailable.")
+        else:
             original_price = super().calculate_price(brand)
             final_price = self.calculate_price(brand)
-            stock = self.car_info[brand]["Stock"]
+            stock = self.car_market[brand]['Stock']
 
-            print(f"Brand: {brand}")
-            print(f"Original price: {original_price}$")
-            print(f"Final price: {final_price}$")
-            print(f"Stock: {stock}")
-
+            print(f"\nCar found: {brand}")
+            print(f"Original price: ${original_price}")
+            print(f"Final price: ${final_price}")
+            print(f"Available stock: {stock}")
+            
             logging.info(f"Successful search: {brand}")
 
-        else:
-            print(f"{brand} is not available in the market \n")
-            logging.error(f"Unsuccessful search: {brand} does not exist")
+            if brand == "BMW":
+                print("Discount applied: 20%")
 
-
+            logging.info("Successful car search: {brand}")
+            
+    
     def buy_car(self, brand, quantity):
         print("\n Purchased Car Info: ")
+        
         if not self.check_car_existence(brand):
-            print(f"{brand} isn't available \n")
-            logging.error(f"Purchase failed: {brand} does not exist")
+            print(f"{brand} is not available.")
+            logging.info(f"Car {brand} is unavailable.")
             return
 
         if type(quantity) != int or quantity <= 0:
             print("Invalid quantity. Please enter a positive number. \n")
             logging.error(f"Purchase failed: Invalid quantity {quantity}")
             return
-
-        stock = self.car_info[brand]["Stock"]
-
-        if quantity > stock:
-            print(f"Insufficient stock. Available cars: {stock} \n")
-            logging.error(f"Purchase failed: Insufficient stock for {brand}")
+        
+        if quantity > self.car_market[brand]['Stock']:
+            print("Insufficient stock!")
+            logging.info(f"Insufficient stock for {brand}. Requested: {quantity}")
             return
-
 
         price = self.calculate_price(brand)
         total_price = price * quantity
+        self.car_market[brand]['Stock'] -= quantity
 
-        self.car_info[brand]["Stock"] -= quantity
+        print("\nPurchase successful!")
+        print(f"Car: {brand}")
+        print(f"Quantity: {quantity}")
+        print(f"Price per car: ${price}")
+        print(f"Total price: ${total_price}")
+        print(f"Remaining stock: {self.car_market[brand]['Stock']}")
 
-        print(f"Successfully purchased {quantity} {brand} car(s).")
-        print(f"Total price: {total_price}$")
-        print(f"Remaining stock: {self.car_info[brand]['Stock']}")
-
-        logging.info(f"Successful purchase: {quantity} {brand} car(s), total {total_price}$")
+        logging.info(f"Successful purchase: {brand}, quantity: {quantity}, total: ${total_price}")
 
 
 
