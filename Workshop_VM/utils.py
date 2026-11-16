@@ -1,12 +1,10 @@
-from Workshop_VM import data as data
+import data 
 import os
 import shutil
 import pandas
 import logging
-from Workshop_VM import config as config
 
-def setup_logging():
-    config.config
+
 
 def create_directory(dir_name):
     if not os.path.exists(dir_name):
