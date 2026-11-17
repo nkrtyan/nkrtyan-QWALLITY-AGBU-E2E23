@@ -15,7 +15,7 @@ logging.info("3. Return the original price of the selected car. Return" \
 "None if the brand does not exist.")
 car_market_obj.calculate_price("BMW")
 
-my_car_obj = MyCar("BMW")
+my_car_obj = MyCar("BMW", 1)
 logging.info("4. Override the parent method. Apply a 20% discount for BMW. " \
 "Return the original price for other brands.")
 my_car_obj.calculate_price("Ford")
