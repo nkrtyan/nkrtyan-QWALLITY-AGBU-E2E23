@@ -44,72 +44,79 @@ class CarMarket:
         }
     }
 
-        #TODO init, 
+    def __init__(self, brand):
+        self.brand = brand
+
     def check_car_existence(self, brand):
         if brand in self.car_market:
+            logging.info(f"This is the model of this car. - {brand}")
             return True
-        #TODO logs
         else:
+            logging.error(f"The car with this {brand} brand name does not exist")
             return False
-        #TODO logs
+        #FIX logs
     
     
     def show_market(self):
         print("\n========== CAR MARKET ==========")
 
         for brand, details in self.car_market.items():
-            print(
+            logging.info(
                 f"Brand: {brand} | "
                 f"Price: {details['Price']} | "
                 f"Stock: {details['Stock']}"
             )
-            logging.info("Car Market shows successfully")  # TODO (brand,price,stock)
+            #FIX (brand,price,stock in logs)
     
     
     def calculate_price(self, brand):
         if self.check_car_existence(brand):
+            price = self.car_market[brand]['Price']
+            logging.info(f"Here the car {brand} model and the price is ${price}.")
             return self.car_market[brand]['Price']
         else:
-            logging.info("Car {brand} is unavailable for price calculation.")
+            logging.info(f"Car {brand} is unavailable for price calculation.")
             return None
         
 
 class MyCar(CarMarket):
-        
+
+    def __init__(self, brand, quantity):
+        super().__init__(brand)
+        self.quantity = quantity 
+
+
     def calculate_price(self, brand):
         original_price = super().calculate_price(brand)
+        discount = original_price * 0.8
         
         if original_price is None:
-            logging.info("{original_price} is unavailable. ")
             return None
-        
         elif brand == "BMW":
-            return original_price * 0.80 #TODO discount, logs
+            logging.info(f"New price {discount}($) after 20% discount for this {brand} car")
+            return discount #FIX discount, logs
         else:
+            logging.info(f"The price is {original_price} for {brand} car.")
             return original_price
         
         
     def search_car(self, brand):
         if self.check_car_existence(brand):
-            logging.info("Unsuccessful search: {brand} is unavailable.")
-        else:
+            logging.info(f"Successful search: {brand} is available.")
             original_price = super().calculate_price(brand)
             final_price = self.calculate_price(brand)
             stock = self.car_market[brand]['Stock']
 
-            print(f"\nCar found: {brand}")
-            print(f"Original price: ${original_price}")
-            print(f"Final price: ${final_price}")
-            print(f"Available stock: {stock}")
-            
-            logging.info(f"Successful search: {brand}")
+            logging.info(f"\nCar found: {brand}")
+            logging.info(f"Original price: ${original_price}")
+            logging.info(f"Final price: ${final_price}")
+            logging.info(f"Available stock: {stock}")
+        else:
+            logging.info(f"Unsuccessful search: {brand} is unavailable.")
 
             # if brand == "BMW":
-            #     print("Discount applied: 20%") # TODO replace in calculate function
+            #     print("Discount applied: 20%") # FIX replace in calculate function
 
-            logging.info("Successful car search: {brand}")
-            
-    
     def buy_car(self, brand, quantity):
         print("\n Purchased Car Info: ")
         
@@ -132,14 +139,12 @@ class MyCar(CarMarket):
         total_price = price * quantity
         self.car_market[brand]['Stock'] -= quantity
 
-        print("\nPurchase successful!")
-        print(f"Car: {brand}")
-        print(f"Quantity: {quantity}")
-        print(f"Price per car: ${price}")
-        print(f"Total price: ${total_price}")
-        print(f"Remaining stock: {self.car_market[brand]['Stock']}") # TODO replace log
-
-        logging.info(f"Successful purchase: {brand}, quantity: {quantity}, total: ${total_price}")
+        logging.info("\nPurchase successful!")
+        logging.info(f"Car: {brand}")
+        logging.info(f"Quantity: {quantity}")
+        logging.info(f"Price per car: ${price}")
+        logging.info(f"Total price: ${total_price}")
+        logging.info(f"Remaining stock: {self.car_market[brand]['Stock']}") # FIX replace log
 
 
 
