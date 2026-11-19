@@ -3,7 +3,6 @@ fake = Faker()
 
 headers = {
     'Content-type': 'application/json',
-    "Auth": "Bearer "
 }
 
 

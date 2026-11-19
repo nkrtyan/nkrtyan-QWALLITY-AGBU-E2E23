@@ -28,4 +28,4 @@ def test_login_user(username, password):
     return data.headers
 
 if __name__ == "__main__":
-    test_login_user(username, password)
+    test_login_user(data.register_body["username"], data.register_body["password"])
