@@ -43,13 +43,15 @@ class CarMarket:
            "Price": 27000, "Stock": 5
         }
     }
-    
-    
+
+        #TODO init, 
     def check_car_existence(self, brand):
         if brand in self.car_market:
             return True
+        #TODO logs
         else:
             return False
+        #TODO logs
     
     
     def show_market(self):
@@ -61,16 +63,16 @@ class CarMarket:
                 f"Price: {details['Price']} | "
                 f"Stock: {details['Stock']}"
             )
-            logging.info("Car Market shows successfully") 
+            logging.info("Car Market shows successfully")  # TODO (brand,price,stock)
     
     
     def calculate_price(self, brand):
         if self.check_car_existence(brand):
             return self.car_market[brand]['Price']
         else:
-            return None
             logging.info("Car {brand} is unavailable for price calculation.")
-                   
+            return None
+        
 
 class MyCar(CarMarket):
         
@@ -78,19 +80,17 @@ class MyCar(CarMarket):
         original_price = super().calculate_price(brand)
         
         if original_price is None:
-            return None
             logging.info("{original_price} is unavailable. ")
-
+            return None
         
-        if brand == "BMW":
-            return original_price * 0.80
+        elif brand == "BMW":
+            return original_price * 0.80 #TODO discount, logs
         else:
             return original_price
         
         
     def search_car(self, brand):
-        if not self.check_car_existence(brand):
-            print(f"{brand} is not available in our market.")
+        if self.check_car_existence(brand):
             logging.info("Unsuccessful search: {brand} is unavailable.")
         else:
             original_price = super().calculate_price(brand)
@@ -104,8 +104,8 @@ class MyCar(CarMarket):
             
             logging.info(f"Successful search: {brand}")
 
-            if brand == "BMW":
-                print("Discount applied: 20%")
+            # if brand == "BMW":
+            #     print("Discount applied: 20%") # TODO replace in calculate function
 
             logging.info("Successful car search: {brand}")
             
@@ -123,7 +123,7 @@ class MyCar(CarMarket):
             logging.error(f"Purchase failed: Invalid quantity {quantity}")
             return
         
-        if quantity > self.car_market[brand]['Stock']:
+        elif quantity > self.car_market[brand]['Stock']:
             print("Insufficient stock!")
             logging.info(f"Insufficient stock for {brand}. Requested: {quantity}")
             return
@@ -137,7 +137,7 @@ class MyCar(CarMarket):
         print(f"Quantity: {quantity}")
         print(f"Price per car: ${price}")
         print(f"Total price: ${total_price}")
-        print(f"Remaining stock: {self.car_market[brand]['Stock']}")
+        print(f"Remaining stock: {self.car_market[brand]['Stock']}") # TODO replace log
 
         logging.info(f"Successful purchase: {brand}, quantity: {quantity}, total: ${total_price}")
 

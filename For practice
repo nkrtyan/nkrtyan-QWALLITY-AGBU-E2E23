@@ -232,22 +232,152 @@
 
 # obj_1 = MyClass()
 # obj_2 = MyClass()
-# MyClass.reset_instance_count()
-# obj_3 = MyClass()
+# # MyClass.reset_instance_count()
+# # obj_3 = MyClass()
 
 
-class Person:
-    def __init__(self, firstname, lastname):
-        self.firstname = firstname
-        self.lastname = lastname
-        self.printname = printname
+# class Person:
+#     def __init__(self, firstname, lastname):
+#         self.firstname = firstname
+#         self.lastname = lastname
+#         self.printname = printname
 
-    def printname(self):
-        print(f"self.firstname self.lastname")
-class Student(Person):
-    def __init__(self, firstname, lastname):
-        Person.__init__(self, firstname, lastname)
+#     def printname(self):
+#         print(f"self.firstname self.lastname")
+# class Student(Person):
+#     def __init__(self, firstname, lastname):
+#         Person.__init__(self, firstname, lastname)
+
+import logging
+class CarMarket:
+    
+    car_market = {
+        "BMW": 
+        {
+           "Price": 50000, "Stock": 5
+        },
+        "Toyota": 
+        {
+           "Price": 30000, "Stock": 5
+        },
+        "Ford": 
+        {
+           "Price": 35000, "Stock": 5
+        },
+        "Honda":
+        {
+           "Price": 32000, "Stock": 5
+        },
+        "Kia":
+        {
+           "Price": 34000, "Stock": 5
+        },
+        "BYD Sealion":
+        {
+           "Price": 40000, "Stock": 5
+        },
+        "Bugatti":
+        {
+           "Price": 2500000, "Stock": 5
+        },
+        "Audi":
+        {
+           "Price": 55000, "Stock": 5
+        },
+        "Mercedes-Benz":
+        {
+           "Price": 60000, "Stock": 5
+        },
+        "Hyundai":
+        {
+           "Price": 27000, "Stock": 5
+        }
+    }
+
+
+    def check_car_existence(self,brand):
+        if brand in self.car_market:
+            return True
+        else:
+            return False
+
+
+    def show_market(self):
+        if self.check_car_existence:
+            for brand, details in self.car_market.items():
+                print(
+                    f"Brand: {brand}"
+                    f"Price: {details["Price"]}"
+                    f"Stock: {details["Stock"]}"
+                )
+        else:
+            print(f"{brand} doesn't available")
+
+
+    def calculate_price(self, brand):
+        if self.check_car_existence(brand):
+            return self.car_market[brand]["Price"]
+        else:
+            return None
+
+
+class MyCar(CarMarket):
+
+    def calculate_price(self,brand):
+        original_price = super().calculate_price(brand)
+
+        if original_price is None:
+            return None
+
+        if brand == "BMW":
+            return original_price * 0.8
+        else:
+            original_price
+
+
+    def search_car(self,brand):
+        if not self.check_car_existence(brand):
+            print(f"Car doesn't exists")
+        else:
+            original_price = super().calculate_price()
+            final_price = self.calculate_price()
+            stock = self.car_market[brand]["Stock"]
+
+            print(f"\nCar found: {brand}")
+            print(f"Original price: ${original_price}")
+            print(f"Final price: ${final_price}")
+            print(f"Available stock: {stock}")
+
+            if brand == "BMW":
+                print("Discount applied: 20%")
+
+    def buy_car(self, brand, quantity):
+        if not self.check_car_existence():
+            return 
+
+        if type(quantity) != int or quantity <= 0:
+            print("Invalid quantity. Please enter a positive number. \n")
+            return    
+
+        if quantity > self.car_market[brand]['Stock']:
+            print("Insufficient stock!")  
+            return  
+
+        price = self.calculate_price(brand)
+        total_price = price * quantity
+        self.car_market[brand]["Stock"] -= quantity
 
         
+
+
+
+
+
+
+
+
+        
+
+
 
 

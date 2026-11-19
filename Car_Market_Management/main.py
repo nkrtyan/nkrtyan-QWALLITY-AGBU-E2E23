@@ -2,6 +2,8 @@ import logging
 import car_market as car
 import logger_config as log
 
+#TODO call path coverage
+
 log.setup_logger()
 
 logging.info("Program has started")
@@ -15,7 +17,7 @@ market.buy_car("Tesla", 2)
 market.buy_car("BMW", 2)
 market.search_car("BMW")
 
-logging.info(" Program finished")
+logging.info(" Program finished") 
 
 
 
