@@ -5,20 +5,15 @@ import data
 
 
 def test_login_user(username, password):
-    login_data = {
-        "username": username,
-        "password": password
-    }
 
     for attempt in range(10):
         try:
-            login_response = requests.post(endpoint.login_endpoint,auth=HTTPBasicAuth(username, password), json=login_data, headers=data.headers)
+            login_response = requests.post(endpoint.login_endpoint,auth=HTTPBasicAuth(username, password), headers=data.headers)
             token = login_response.json().get("token")
             
             if token:
                 print("User logged in successfully")
                 print(login_response.json())
-                print("Token - ", token)
                 data.headers["Authorization"] = f"Bearer {token}"
                 break
     
