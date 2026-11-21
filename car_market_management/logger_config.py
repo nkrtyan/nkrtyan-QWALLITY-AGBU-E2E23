@@ -6,6 +6,6 @@ def setup_logger():
         format="%(asctime)s - %(levelname)s - %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",
         filename="car_market.log",
-        filemode="a+",
+        filemode="w",
     )
     
