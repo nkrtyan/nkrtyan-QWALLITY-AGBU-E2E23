@@ -17,8 +17,15 @@ register_body = {
 course_body = {
                 "title": "Python_Basics",
                 "body": "Introduction_to_Python",
-                "coursetype": "1",
+                "coursetype": "2",
                 "author": "admin_user",
                 "price": 100
                 }
 
+account_balance_body = {
+                        "amount": 100,
+                        "payment": "2",
+                        "card_num": 1234567890123456,
+                        "exp_date": "2027/11/22",
+                        "card_cvv": "123"
+                        }

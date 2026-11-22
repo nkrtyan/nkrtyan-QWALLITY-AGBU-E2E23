@@ -5,12 +5,11 @@ import data
 import register_user
 
 
-def test_login_user():
+def test_login_user(username, password):
     for attempt in range(10):
-        username, password = register_user.test_register_user()
 
         try:
-            login_response = requests.post(endpoints.login_endpoint, auth=HTTPBasicAuth(username, password))
+            login_response = requests.post(endpoints.login_endpoint, auth=HTTPBasicAuth(username = username, password = password))
             token = login_response.json().get('token')
 
             if token:
