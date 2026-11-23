@@ -2,7 +2,7 @@ register_endpoint = 'https://qwallity-prod.onrender.com/register/api'
 login_endpoint = 'https://qwallity-prod.onrender.com/login/api'
 add_course_endpoint = 'https://qwallity-prod.onrender.com/add_course/api'
 get_adv_courses_endpoint = 'https://qwallity-prod.onrender.com/courses/advanced/api'
-delete_course_endpoint = f'https://qwallity-prod.onrender.com/courses/course/%s ' # %s is course_id
+delete_course_endpoint = f'https://qwallity-prod.onrender.com/courses/course/%s'
 account_balance_endpoint = 'https://qwallity-prod.onrender.com/add_account_balance/payment_api'
 get_account_balance_endpoint = 'https://qwallity-prod.onrender.com/balance/balance_api'
 

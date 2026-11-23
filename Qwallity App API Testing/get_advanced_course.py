@@ -16,6 +16,8 @@ def test_get_advanced_courses(course_id, headers):
                 for i in all_adv_courses["result"]:
                     if int(course_id) == i["id"]:
                         print(f"New added advanced course {course_id} exist in the list")
+                        break
+                break
 
         except requests.RequestException as e:
             print(e)

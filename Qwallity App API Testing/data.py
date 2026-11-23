@@ -22,6 +22,10 @@ course_body = {
                 "price": 100
                 }
 
+roll_id_body = {
+                "role_id": "1"
+                }
+
 account_balance_body = {
                         "amount": 100,
                         "payment": "2",
