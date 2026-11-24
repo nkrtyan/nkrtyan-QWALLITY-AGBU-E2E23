@@ -11,6 +11,5 @@ import add_balance
 username, password = register_user.test_register_user()
 my_header = login.test_login_user(username, password)
 course_id = add_course_adv.add_advance_course(my_header)
-initial_balance = get_balance.get_account_balance(my_header)#TODO
 added_balance = add_balance.add_account_balance(my_header)
 delete_course.delete_courses(my_header, course_id)
