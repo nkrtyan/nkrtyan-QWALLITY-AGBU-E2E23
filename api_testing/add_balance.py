@@ -12,7 +12,7 @@ def add_account_balance(header):
                 amount = data.balance_body["amount"]     
                 print(f"Account balance added successfully: {amount}")
                 
-                new_balance = get_balance.get_account_balance(header)
+                new_balance = get_balance.get_account_balance(header)#TODO
                 return new_balance
                 
             

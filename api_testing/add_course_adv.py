@@ -17,4 +17,4 @@ def add_advance_course(header):
         except requests.RequestException as e:
             print(e)
             print(f"Attempt {attempt + 1}: Course is deleted. Retrying...")
-    
+#TODO checking for non admin

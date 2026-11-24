@@ -7,7 +7,7 @@ def delete_courses(header, course_id):
     role_id = data.register_body["role_id"]
     author = data.course_body["author"]
 
-    if role_id != 1 or author != "admin_user":
+    if role_id != 1 or author != "admin_user":#TODO combine inside for
         print("You can't delete the course: only an admin can delete courses.")
         return False
     
