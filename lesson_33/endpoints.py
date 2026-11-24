@@ -1,0 +1,7 @@
+register_endpoint = 'https://qwallity-prod.onrender.com/register/api'
+login_endpoint = 'https://qwallity-prod.onrender.com/login/api'
+add_course_endpoint = 'https://qwallity-prod.onrender.com/add_course/api'
+get_fund_courses_endpoint = 'https://qwallity-prod.onrender.com/courses/fundamental/api'
+delete_course_endpoint = f'https://qwallity-prod.onrender.com/courses/course/%s'
+add_balance_endpoint = 'https://qwallity-prod.onrender.com/add_account_balance/payment_api'
+get_balance_endpoint = 'https://qwallity-prod.onrender.com/balance/balance_api'
