@@ -8,7 +8,7 @@ import get_account_balance
 
 
 username, password = register_user.test_register_user()
-non_admin_header = login.test_login_user(username,password)
+non_admin_header = login.test_login_user(username = username,password = password)
 course_id = add_course.test_add_course(headers = non_admin_header)
 get_advanced_course.test_get_advanced_courses(course_id = course_id, headers = non_admin_header)
 delete_course.test_delete_course(course_id = course_id, headers = non_admin_header)
