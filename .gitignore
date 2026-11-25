@@ -1,0 +1,3 @@
+#files that we don't want to commit
+.env
+*.log
