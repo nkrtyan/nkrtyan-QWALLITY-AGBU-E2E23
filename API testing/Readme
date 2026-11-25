@@ -1,0 +1,22 @@
+# REST API Automation Testing Project
+
+API Documentation - https://qwallity-prod.onrender.com/swagger
+
+# Project Structure
+
+`endpoints.py` — Stores all API endpoint URLs used across the project.
+`data.py` — Contains request headers and dynamically generated test payloads (user credentials, course details) using the `Faker` library.
+`register_user.py` — Sends a `POST` request to register a new non-admin user and returns the created credentials.
+`login.py` — Authenticates the newly registered user via Basic Auth, retrieves the Bearer token, and updates the authorization headers. `POST`
+`add_course.py` — Creates a new advanced course and returns its ID (also logs a warning if a non-admin user is permitted to add a course). `POST`
+`get_advanced_courses.py` — Fetches the list of advanced courses and verifies whether the newly created course appears in the list. `GET`
+`delete_course.py` — Attempts to delete the course by course_id with non-admin permissions and verifies that the server denies the request. 
+`account_balance.py` — Retrieves the user's initial balance, adds funds (`100`), and verifies that the updated balance increases by the exact amount added. `GET` & `POST`
+`test.py` — The main entry point that orchestrates and runs the entire test scenario step by step.
+
+# Prerequisites & Setup
+
+1. Install the required libraries:
+   python - pip install requests faker
+2. Run the main test script:
+   python test.py
