@@ -33,3 +33,4 @@ else:
     time.sleep(20)
     driver.close()
     logging.info("Browser closed successfully.")
+# Nel, code is correct, environment is reading correctly
