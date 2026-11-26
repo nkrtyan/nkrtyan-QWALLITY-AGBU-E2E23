@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-import environment_veriables
+import environment_veriables # TODO, not used
 import os
 
 driver = webdriver.Chrome()
@@ -22,3 +22,4 @@ time.sleep(10)
 
 driver.close()
 print("Test is finished.")
+# Nel, correct, working code
