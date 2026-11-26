@@ -1,0 +1,22 @@
+2026-11-18 17:54:32,919 - INFO - Ford found successfully.
+2026-11-18 17:54:32,919 - INFO - Brand: BMW, Price: $50000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Toyota, Price: $30000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Ford, Price: $35000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Honda, Price: $32000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Kia, Price: $34000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: BYD Sealion, Price: $40000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Bugatti, Price: $2500000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Audi, Price: $55000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Mercedes-Benz, Price: $60000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Brand: Hyundai, Price: $27000, Stock: 5
+2026-11-18 17:54:32,919 - INFO - Toyota found successfully.
+2026-11-18 17:54:32,919 - INFO - The cost calculation was successful: Toyota - $30000
+2026-11-18 17:54:32,920 - INFO - BMW found successfully.
+2026-11-18 17:54:32,920 - INFO - The cost calculation was successful: BMW - $50000
+2026-11-18 17:54:32,920 - INFO - 40000.0 — price with a 20% discount
+2026-11-18 17:54:32,920 - INFO - Toyota found successfully.
+2026-11-18 17:54:32,920 - INFO - Original price: $30000
+Discounts are available for BMW only.
+Available cars in stock: 5
+2026-11-18 17:54:32,920 - INFO - The total price for 2 car(s) is: $60000
+2026-11-18 17:54:32,920 - INFO - Only 3 car(s) of this brand are available in stock.
