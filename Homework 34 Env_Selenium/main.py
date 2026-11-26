@@ -1,7 +1,7 @@
 import os
 from facebook import login_test
 import logging
-import log
+import log # TODO, not used
 
 
 if __name__ == "__main__":

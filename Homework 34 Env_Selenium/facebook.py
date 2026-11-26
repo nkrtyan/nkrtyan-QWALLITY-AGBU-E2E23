@@ -11,7 +11,7 @@ def login_test(username, password):
     driver = webdriver.Chrome()
     driver.maximize_window()
 
-    for attempt in range(10):
+    for attempt in range(10): # TODO, no need atempt, as this is now qwallity server
         try:
             driver.get("https://www.facebook.com")
 
@@ -19,6 +19,7 @@ def login_test(username, password):
             password_field = driver.find_element(By.NAME, "pass")
             submit = driver.find_element(By.XPATH, '//*[@id="login_form"]/div/div[1]/div/div[3]/div/div/div')
 
+            # TODO, why you are checking the fields == os.environment, instead you need just pass differenet data and submit, after check validation messages
             if username_field == os.environ.get("my_username") and password_field == os.environ.get("my_pass"):
                 logging.info("Login done successfully! ")
             elif username_field != os.environ.get("my_username") and password_field == os.environ.get("my_pass"):
@@ -35,7 +36,7 @@ def login_test(username, password):
             time.sleep(3)
 
             submit.click()
-            time.sleep(10)
+            time.sleep(10) # TODO, no need so much time to stop the script
 
             
             logging.info("Test log in to Facebook done successfully!")
@@ -46,7 +47,7 @@ def login_test(username, password):
             logging.info('Attempt %s: Log in failed. Retrying...', attempt + 1)
             
     driver.close()
-
+# Nel, the other part is correct
 
 
 
