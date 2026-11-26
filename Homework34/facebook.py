@@ -15,29 +15,32 @@ logging.basicConfig(
 )
 
 load_dotenv() 
+def automated_login():
+    # TODO, why not keep under function /#FIXED
+    email = os.getenv("fb_email")
+    pwd = os.getenv("fb_pass")
 
-# TODO, why not keep under function 
-email = os.getenv("fb_email")
-pwd = os.getenv("fb_pass")
+    if not email or not pwd:
+        logging.error("Email or password not found in .env file!")
+    else:
+        driver = webdriver.Chrome()
+        driver.maximize_window()
+        driver.get("https://www.facebook.com/")
 
-if not email or not pwd:
-    logging.error("Email or password not found in .env file!")
-else:
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    driver.get("https://www.facebook.com/")
+        username = driver.find_element(By.NAME, "email")
+        password = driver.find_element(By.NAME, "pass")
+        submit = driver.find_element(By.XPATH, '//*[@id="login_form"]/div/div[1]/div/div[3]/div/div/div')
+        
+        username.send_keys(email)
+        password.send_keys(pwd)
+        submit.click()
+        
+        time.sleep(5) # TODO, no need so many second stop the code/#FIXED
 
-    username = driver.find_element(By.NAME, "email")
-    password = driver.find_element(By.NAME, "pass")
-    submit = driver.find_element(By.XPATH, '//*[@id="login_form"]/div/div[1]/div/div[3]/div/div/div')
-    
-    username.send_keys(email)
-    password.send_keys(pwd)
-    submit.click()
-    
-    time.sleep(20) # TODO, no need so many second stop the code
+        logging.info(f"Login succeeded! Page title: {driver.title}")
+        driver.close()
+        logging.info("Test is finished")
+        # Nel, code is correct, good :)
 
-    logging.info(f"Login succeeded! Page title: {driver.title}")
-    driver.close()
-    logging.info("Test is finished")
-    # Nel, code is correct, good :)
+if __name__ == "__main__":
+    automated_login()   
