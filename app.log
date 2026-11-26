@@ -1,0 +1,68 @@
+2026-11-19 10:48:20,380 - INFO - Registration test started
+2026-11-23 18:17:51 - INFO - Starting user registration
+2026-11-23 18:18:25 - INFO - User registered successfully
+2026-11-23 18:18:25 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666812}
+2026-11-23 18:18:26 - INFO - Starting user registration
+2026-11-23 18:18:28 - INFO - User registered successfully
+2026-11-23 18:18:28 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666813}
+2026-11-23 18:29:26 - INFO - Starting user registration
+2026-11-23 18:29:28 - INFO - User registered successfully
+2026-11-23 18:29:28 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666814}
+2026-11-23 18:29:28 - INFO - Starting user login
+2026-11-23 18:29:29 - INFO - User logged in successfully
+2026-11-23 18:38:24 - INFO - Starting user registration
+2026-11-23 18:38:26 - INFO - User registered successfully
+2026-11-23 18:38:26 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666815}
+2026-11-23 18:40:05 - INFO - Starting user registration
+2026-11-23 18:40:07 - INFO - User registered successfully
+2026-11-23 18:40:07 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666816}
+2026-11-23 18:41:26 - INFO - Starting user registration
+2026-11-23 18:41:27 - INFO - User registered successfully
+2026-11-23 18:41:27 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666817}
+2026-11-23 18:41:27 - INFO - Starting user login
+2026-11-23 18:41:29 - INFO - User logged in successfully
+2026-11-23 18:41:29 - INFO - Starting advanced course creation
+2026-11-23 18:43:30 - INFO - Starting user registration
+2026-11-23 18:43:32 - INFO - User registered successfully
+2026-11-23 18:43:32 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666818}
+2026-11-23 18:43:32 - INFO - Starting user login
+2026-11-23 18:43:33 - INFO - User logged in successfully
+2026-11-23 18:43:33 - INFO - Starting advanced course creation
+2026-11-23 18:43:34 - INFO - Course 2147484933 added successfully
+2026-11-23 18:54:17 - INFO - Starting user registration
+2026-11-23 18:54:19 - INFO - User registered successfully
+2026-11-23 18:54:19 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666819}
+2026-11-23 18:54:19 - INFO - Starting user login
+2026-11-23 18:54:21 - INFO - User logged in successfully
+2026-11-23 18:54:21 - INFO - Starting advanced course creation
+2026-11-23 18:54:21 - INFO - Course 2147484934 added successfully
+2026-11-23 18:54:21 - INFO - Starting advanced course retrieval
+2026-11-23 18:56:58 - INFO - Starting user registration
+2026-11-23 18:56:59 - INFO - User registered successfully
+2026-11-23 18:56:59 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666820}
+2026-11-23 18:56:59 - INFO - Starting user login
+2026-11-23 18:57:01 - INFO - User logged in successfully
+2026-11-23 18:57:01 - INFO - Starting advanced course creation
+2026-11-23 18:57:01 - INFO - Course 2147484935 added successfully
+2026-11-23 18:57:01 - INFO - Starting advanced course retrieval
+2026-11-23 18:57:04 - INFO - Starting user registration
+2026-11-23 18:57:06 - INFO - User registered successfully
+2026-11-23 18:57:06 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666821}
+2026-11-23 18:57:06 - INFO - Starting user login
+2026-11-23 18:57:08 - INFO - User logged in successfully
+2026-11-23 18:57:08 - INFO - Starting advanced course creation
+2026-11-23 18:57:08 - INFO - Course 2147484936 added successfully
+2026-11-23 18:57:08 - INFO - Starting advanced course retrieval
+2026-11-23 18:57:11 - INFO - Advanced courses retrieved successfully
+2026-11-23 19:03:32 - INFO - Starting user registration
+2026-11-23 19:03:33 - INFO - User registered successfully
+2026-11-23 19:03:33 - INFO - Registration response: {'message': 'User is created', 'user_id': 555666822}
+2026-11-23 19:03:33 - INFO - Starting user login
+2026-11-23 19:03:35 - INFO - User logged in successfully
+2026-11-23 19:03:35 - INFO - Starting advanced course creation
+2026-11-23 19:03:35 - INFO - Course 2147484937 added successfully
+2026-11-23 19:03:35 - INFO - Starting advanced course retrieval
+2026-11-23 19:03:38 - INFO - Advanced courses retrieved successfully
+2026-11-23 19:03:38 - INFO - Starting course deletion. Course ID: 2147484937
+2026-11-23 19:03:38 - INFO - Attempt 1: Deleting course 2147484937
+2026-11-23 19:03:41 - ERROR - Unauthorized access. Please check your credentials.
