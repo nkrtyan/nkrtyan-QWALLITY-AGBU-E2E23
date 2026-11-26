@@ -16,3 +16,4 @@ get_account_balance.test_get_account_balance(headers = non_admin_header)
 account_balance.test_adding_account_balance(headers = non_admin_header)
 
 print("Test scenarion is finished successfully!")
+
