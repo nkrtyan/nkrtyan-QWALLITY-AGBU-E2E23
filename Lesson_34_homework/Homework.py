@@ -24,3 +24,4 @@ submit.click()
 
 #step 5)close the browser
 driver.close()
+# Nel, correct, working code, you can move he logic inside the function
