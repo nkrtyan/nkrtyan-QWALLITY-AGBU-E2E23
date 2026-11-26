@@ -1,0 +1,26 @@
+import requests
+import endpoints
+import data
+
+
+def test_add_course(headers):
+    for attempt in range(5):
+        try:
+            add_course_response = requests.post(endpoints.add_course_endpoint, json=data.course_body, headers=headers)
+            course_id = add_course_response.json().get("id")
+            
+            if course_id == 200 and "role_id" == 1:  #check role ID and status code
+                print(f"{course_id} Course added successfully.")
+                break
+            
+        except requests.RequestException as e:
+            print(e)
+            print(f"Attempt {attempt + 1}: Course adding failed. Retrying...")
+            
+            
+    return course_id
+
+
+            
+    
+    
