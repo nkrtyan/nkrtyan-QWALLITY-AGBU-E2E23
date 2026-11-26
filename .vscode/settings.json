@@ -1,0 +1,5 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "update.mode": "none",
+    "extensions.autoUpdate": false
+}
