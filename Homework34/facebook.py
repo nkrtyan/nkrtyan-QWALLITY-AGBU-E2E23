@@ -16,6 +16,7 @@ logging.basicConfig(
 
 load_dotenv() 
 
+# TODO, why not keep under function 
 email = os.getenv("fb_email")
 pwd = os.getenv("fb_pass")
 
@@ -34,8 +35,9 @@ else:
     password.send_keys(pwd)
     submit.click()
     
-    time.sleep(20)
+    time.sleep(20) # TODO, no need so many second stop the code
 
     logging.info(f"Login succeeded! Page title: {driver.title}")
     driver.close()
     logging.info("Test is finished")
+    # Nel, code is correct, good :)
