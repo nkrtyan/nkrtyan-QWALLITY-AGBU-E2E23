@@ -2,19 +2,19 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 locators = {
-    "Benz_radio_button":        (By.ID, "benzradio"),
-    "Honda_checkbox":           (By.CSS_SELECTOR, "input#hondacheck"),
-    "Open_Tab_button":          (By.ID, "opentab"),
-    "Orange_option":            (By.CSS_SELECTOR, "#multiple-select-example option[value='orange']"),
-    "Peach_option":             (By.CSS_SELECTOR, "#multiple-select-example option[value='peach']"),
-    "Show_button":              (By.ID, "show-textbox"),
-    "Hide/Show_Example_field":  (By.ID, "displayed-text"),
-    "Enter_Your_Name_field":    (By.CSS_SELECTOR, "input#name"),
+    "Benz_radio_button": (By.ID, "benzradio"),
+    "Honda_checkbox": (By.CSS_SELECTOR, "input#hondacheck"),
+    "Open_Tab_button": (By.ID, "opentab"),
+    "Orange_option": (By.CSS_SELECTOR, "#multiple-select-example option[value='orange']"),
+    "Peach_option": (By.CSS_SELECTOR, "#multiple-select-example option[value='peach']"),
+    "Show_button": (By.ID, "show-textbox"),
+    "Hide_Show_Example_field": (By.ID, "displayed-text"),
+    "Enter_Your_Name_field": (By.CSS_SELECTOR, "input#name"),
     "Mouse_Hover_Example_title": (By.XPATH, "//legend[text()='Mouse Hover Example']"),
-    "Python_Programming_cell":  (By.XPATH, "//table[@id='product']//td[text()='Python Programming Language']"),
+    "Python_Programming_cell": (By.XPATH, "//table[@id='product']//td[text()='Python Programming Language']"),
 }
 
-def find_locators_count():
+def find_locators_count(locators):
     driver = webdriver.Chrome()
     driver.maximize_window()
     driver.get("https://www.letskodeit.com/practice")
@@ -32,4 +32,4 @@ def find_locators_count():
     driver.close()
 
 if __name__ == "__main__":
-    find_locators_count()
+    find_locators_count(locators)
